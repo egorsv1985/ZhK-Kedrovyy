@@ -1,0 +1,184 @@
+// .header {
+//   position: fixed;
+//   width: 100%;
+//   z-index: 999;
+//   --header-height: clamp(10px, 2.99vw + -0.75px, 50px);
+//   padding: var(--header-height) 15px;
+
+//   // .header__wrapper
+//   &__wrapper {
+//     background-color: rgba(1, 1, 1, 0.5);
+//     border: 1px solid #fff;
+//     backdrop-filter: blur(7.5px);
+
+//     border-radius: 76px;
+//     padding: 15px 30px;
+//     position: relative;
+
+//     @include flex($align-items: center);
+//     @include media(max, xl) {
+//       justify-content: space-between;
+//       gap: 15px;
+//     }
+//   }
+//   // .header__block
+//   &__block {
+//     @include flex(space-between, center);
+//     gap: 45px;
+//     position: relative;
+//   }
+//   // .header__span
+//   &__span {
+//     font-family: "ProximaNova-Regular";
+//     font-size: 20px;
+//     line-height: 26px;
+//     letter-spacing: 0em;
+//     position: relative;
+//     &::before {
+//       @include pseudo;
+//       position: absolute;
+//       left: -30px;
+//       top: 0;
+//     }
+//     &--thin {
+//       font-family: "ProximaNova-Light";
+//       font-weight: 300;
+//       line-height: 20px;
+//     }
+//     &--tel::before {
+//       background-image: url(../img/icons/tel.svg);
+//       width: 14px;
+//       height: 15px;
+//     }
+//     &--map::before {
+//       background-image: url(../img/icons/map.svg);
+//       @include wh(23px);
+//     }
+//     &--viber::before {
+//       background-image: url(../img/icons/viber.svg);
+//       @include wh(18px);
+//     }
+//   }
+
+//   // .header__burger
+//   &__burger {
+//     transition: transform 0.4s;
+//   }
+//   --logo-right: clamp(80px, 18.57vw + -170.71px, 145px);
+//   --logo-left: clamp(60px, 5.71vw + -17.14px, 80px);
+//   // .header__logo
+//   &__logo {
+//     margin: 0 var(--logo-right) 0 var(--logo-left);
+//     @include media(max, xl) {
+//       margin: 0;
+//     }
+//   }
+//   // .header__inner
+//   &__inner {
+//     position: relative;
+//     @include flex(space-between, center);
+//     @include media(max, lg) {
+//       display: none;
+//     }
+//   }
+//   // .header__box
+//   &__box {
+//     @include flex(space-between, $flex-direction: column);
+//     @include media(max, xl) {
+//       display: none;
+//     }
+//     &-buttons {
+//       flex-direction: row;
+//       gap: 8px;
+//       margin-left: 16px;
+//       @include media(max, xl) {
+//         display: flex;
+//       }
+//     }
+//     &--time {
+//       --right-time: clamp(50px, 10vw + -85px, 85px);
+//       margin-right: var(--right-time);
+//       &::before {
+//         @include pseudo;
+//         position: absolute;
+
+//         top: 50%;
+//         transform: translateY(-50%);
+
+//         left: -30px;
+//         background-image: url(../img/icons/time.svg);
+//         @include wh(23px);
+//       }
+//     }
+//   }
+
+//   // .header__nav
+//   &__nav {
+//     display: none;
+//   }
+
+//   // .header__link
+//   &__link {
+//     @include flex(center, center);
+
+//     max-width: 195px;
+//     width: 100%;
+//     height: 73px;
+
+//     background-color: #fff;
+//     border-radius: 63px;
+
+//     font-family: "ProximaNova-Regular";
+//     font-size: 20px;
+//     line-height: 20px;
+//     text-align: center;
+//     text-transform: uppercase;
+//     font-weight: 400;
+//     padding: 5px;
+
+//     color: $textAccentColor;
+//     transition: all 0.2s ease-in-out;
+//     &:hover {
+//       background-color: #3a3a3a;
+//       color: $textMainColor;
+//     }
+//   }
+// }
+// .wrapper-schedule {
+//   .header {
+//     // .header__wrapper
+//     &__wrapper {
+//       background-color: rgba(1, 1, 1, 0.5);
+//     }
+//   }
+// }
+// .header {
+//   // .header__social-list
+//   &__social-list {
+//     @include flex(space-between, center);
+//     position: absolute;
+//     right: 18px;
+//     bottom: -60px;
+//     width: 155px;
+//     @include media (max, sm){
+//       display: none;
+//     }
+//   }
+//   // .header__social-item
+//   &__social-item {
+//     transition: all .2s ease-in-out;
+//     &:hover{
+//       background-color: #E8BA18;
+      
+       
+      
+      
+//     }
+//   }
+//   // .header__social-link
+//   &__social-link {
+//   }
+//   // .header__img
+//   &__img {
+//   }
+// }
