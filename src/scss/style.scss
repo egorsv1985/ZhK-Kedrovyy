@@ -26,8 +26,7 @@ $textTabColor: #9fc55a;
 $secondColor: #fff;
 $thirdColor: #d9d9d9;
 $textThirdColor: #585858;
-$bgColor: #9fc55a;
-$bgSecondColor: #F8FAFB;
+$bgColor: #f8fafb;
 
 // НАСТРОЙКИ ===============================================================================================================================================================================================================================================================================================
 // Минимальная ширина страницы
@@ -175,7 +174,7 @@ picture {
 @import "./sections/plans";
 @import "./sections/video";
 @import "./sections/banks";
-// @import "./sections/kids";
+@import "./sections/documents";
 // @import "./sections/spa";
 // @import "./sections/forms";
 
@@ -183,7 +182,7 @@ picture {
 
 // block
 @import "header";
-// @import "footer";
+@import "footer";
 @import "./blocks/nav";
 @import "./blocks/logo";
 @import "./blocks/open-burger";

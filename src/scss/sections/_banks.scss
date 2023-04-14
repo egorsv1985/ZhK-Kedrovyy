@@ -1,103 +1,80 @@
 .banks {
-  padding: 45px 0 100px;
-
+  padding: 45px 0 40px;
   // .banks__title
   &__title {
     margin-bottom: 50px;
   }
   // .banks__content
   &__content {
-  @include flex (space-between,$flex-wrap: wrap);
-  gap: 30px;
-	
+    @include flex( $flex-wrap: wrap);
+    gap: 30px;
+	margin-bottom: 30px;
   }
   // .banks__ipoteka
   &__ipoteka {
-	@include flex (space-between, $flex-direction: column);
-   
-	width: 66%;
+    @include flex( $flex-direction: column);
 
+    width: 100%;
+	max-width: 730px;
 
-    background-color: $bgColor;
+    background-color: $mainColor;
     border-radius: 10px;
-	
   }
   // .banks__box-ipoteka
   &__box-ipoteka {
-	@include flex();
-	.banks__item{
-		width: 50%;
-	}
-	
+    @include flex();
+    position: relative;
   }
-  // .banks__item
+  // .banks__stars
+  &__stars {
+    position: absolute;
+    right: 30px;
+    top: 25px;
+    z-index: 1;
+  }
+  // .banks__item-ipoteka
   &__item-ipoteka {
-	padding: 30px 35px 35px 20px;
-	@include flex($flex-direction: column);
-	width: 50%;
-
+    padding: 30px 35px 35px 20px;
+    @include flex($flex-direction: column);
+    width: 50%;
   }
-  // .banks__item{
-	&__item{
-		
-border: 1px solid $thirdColor;
-border-radius: 10px;
-
-		width: 31%;
-		padding: 40px 15px 30px;
-		.banks__img{
-			margin-bottom: 20px;
-		}
-		.banks__text{
-			margin-bottom: 30px;
-			&--info{
-				position: relative;
-				padding-left: 40px;
-				&::before{
-					@include pseudo;
-					@include wh(24px);
-					@include background (url("@img/icons/information.svg"));
-					position: absolute;
-					top: 50%;
-					left: 0;
-					transform: translateY(-50%);
-				}
-			}
-		}
-		.banks__box-text{
-			width: 50%;
-			
-			&--caramel{
-				background-color: $accentColor;
-				border-radius: 0px 0px 0px 10px;
-			}
-			&--olive-green{
-				background-color: $mainColor;
-				border-radius: 0px 0px 10px 0px;
-			}
-		}
-
-	}
   // .banks__img
   &__img {
-	
-	margin-bottom: 25px;
-	img, picture{
-		width: 100%;
-		height: 100%;
-	}
+    margin-bottom: 25px;
+    img,
+    picture {
+      width: 100%;
+      height: 100%;
+    }
   }
   // .banks__subtitle
   &__subtitle {
     font-size: 24px;
     line-height: 29px;
-	margin-bottom: 20px;
+    margin-bottom: 20px;
   }
   // .banks__group-text
-	&__group-text {
-		@include flex(space-between, center);
-		margin-bottom: 30px;
-	}
+  &__group-text {
+    @include flex(space-between, center);
+    margin-bottom: 30px;
+  }
+  // .banks__box-text
+  &__box-text {
+    @include flex($flex-direction: column);
+    gap: 6px;
+    width: 50%;
+
+    &--caramel {
+      background-color: $accentColor;
+      border-radius: 0px 0px 0px 10px;
+	  padding: 20px;
+    }
+    &--olive-green {
+      background-color: $mainColor;
+      border-radius: 0px 0px 10px 0px;
+	  padding: 20px;
+    }
+  }
   // .banks__text
   &__text {
     &--big {
@@ -108,235 +85,81 @@ border-radius: 10px;
       font-size: 14px;
       line-height: 17px;
     }
-  }
-  // .banks__box-text
-  &__box-text {
-	@include flex ($flex-direction: column);
-	gap: 6px;
-  }
-  // .banks__btn
-	&__btn {
-		position: relative;
-		&::after{
-@include pseudo;
-@include wh(100%, 1px);
-background-color: $secondColor;
-max-width: 161px;
-
-position: absolute;
-
-left: 0;
-bottom:  -2px;
-
-
-
-		}
-
-
+	&--width{
+		max-width: 330px;
+		margin-top: 10px;
 	}
-  // .banks__link
-  &__link {
+  }
+
+  // .banks__btn
+  &__btn {
+    position: relative;
+    &::after {
+      @include pseudo;
+      @include wh(100%, 1px);
+      background-color: $secondColor;
+      max-width: 161px;
+
+      position: absolute;
+
+      left: 0;
+      bottom: -2px;
+    }
   }
   // .banks__box-links
   &__box-links {
-    background-color: $bgSecondColor;
+    background-color: $bgColor;
+	display: flex;
+	gap: 30px;
+	padding: 20px;
   }
   // .banks__group-links
   &__group-links {
+    @include flex(space-between, center, $flex-direction: column);
   }
-  // .banks__text--info
-  &__text--info {
-  }
-}
+  // .banks__link
+  &__link {
+    font-family: "Montserrat-Bold";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
 
-.banks {
-  // .banks__title
-  &__title {
+    color: $textMainColor;
   }
-  // .banks__content
-  &__content {
+  // .banks__card
+  &__card {
+    border: 1px solid $thirdColor;
+    border-radius: 10px;
+width: 100%;
+max-width: 350px;
+padding: 0;
+
+    .banks__group-text{
+		margin-bottom: 0;
+	}
   }
-  // .banks__ipoteka
-  &__ipoteka {
-  }
-  // .banks__box-ipoteka
-  &__box-ipoteka {
-  }
+
   // .banks__item
   &__item {
+	padding: 40px 15px 30px;
+    .banks__text {
+      margin-bottom: 30px;
+      &--info {
+        position: relative;
+        padding-left: 40px;
+		margin-bottom: 0;
+        &::before {
+          @include pseudo;
+          @include wh(24px);
+          @include background(url("@img/icons/information.svg"));
+          position: absolute;
+          top: 50%;
+          left: 0;
+          transform: translateY(-50%);
+        }
+      }
+    }
+	
   }
-  // .banks__img
-  &__img {
-  }
-  // .banks__subtitle
-  &__subtitle {
-  }
-  // .banks__group-text
-	&__group-text {}
-  // .banks__box-text
-  &__box-text {
-  }
-  // .banks__text
-  &__text {
-  }
-  // .banks__link
-  &__link {
-  }
-  // .banks__box-links
-  &__box-links {
-  }
-  // .banks__group-links
-  &__group-links {
-  }
-  // .banks__text--info
-  &__text--info {
-  }
-}
-.container {
-}
-.title {
-}
-.title--extrabold {
-}
-.row {
-}
-.col-8 {
-}
-.col-4 {
-}
-.subtitle--semiBold {
-}
-.subtitle--left {
-}
-.subtitle--accent {
-}
-.text {
-}
-.text--bold {
-}
-.text--left {
-}
-.text--accent {
-}
-.banks {
-	// .banks__title
-	&__title {}
-	// .banks__content
-	&__content {}
-	// .banks__ipoteka
-	&__ipoteka {}
-	// .banks__box-ipoteka
-	&__box-ipoteka {}
-	// .banks__item
-	&__item {}
-	// .banks__img
-	&__img {}
-	// .banks__subtitle
-	&__subtitle {}
-	// .banks__group-text
-	&__group-text {}
-	// .banks__box-text
-	&__box-text {}
-	// .banks__text
-	&__text {}
-	// .banks__text--big
-	&__text--big {}
-	// .banks__text--small
-	&__text--small {}
-	// .banks__link
-	&__link {}
-	// .banks__box-links
-	&__box-links {}
-	// .banks__group-links
-	&__group-links {}
-	// .banks__text--info
-	&__text--info {}
-}
-.container {
-}
-.title {
-}
-.title--extrabold {
-}
-.row {
-}
-.col-8 {
-}
-.subtitle--semiBold {
-}
-.subtitle--left {
-}
-.subtitle--accent {
-}
-.text {
-}
-.text--bold {
-}
-.text--left {
-}
-.text--accent {
-}
-.col-4 {
-}
-.banks {
-	// .banks__title
-	&__title {}
-	// .banks__content
-	&__content {}
-	// .banks__ipoteka
-	&__ipoteka {}
-	// .banks__box-ipoteka
-	&__box-ipoteka {}
-	// .banks__item
-	&__item {}
-	// .banks__img
-	&__img {}
-	// .banks__subtitle
-	&__subtitle {}
-	// .banks__group-text
-	&__group-text {}
-	// .banks__box-text
-	&__box-text {}
-	// .banks__text
-	&__text {}
-	// .banks__text--big
-	&__text--big {}
-	// .banks__text--small
-	&__text--small {}
-	// .banks__btn
-	&__btn {}
-	// .banks__link
-	&__link {}
-	// .banks__box-links
-	&__box-links {}
-	// .banks__group-links
-	&__group-links {}
-	// .banks__text--info
-	&__text--info {}
-}
-.container {
-}
-.title {
-}
-.title--extrabold {
-}
-.row {
-}
-.col-8 {
-}
-.subtitle--semiBold {
-}
-.subtitle--left {
-}
-.subtitle--accent {
-}
-.text {
-}
-.text--bold {
-}
-.text--left {
-}
-.text--accent {
-}
-.col-4 {
+ 
 }

@@ -22,45 +22,45 @@
    @include media(min-max, 870px, 1000px) { display: none;}
 --------------------------------------------------------------------*/
 @font-face {
-  font-family: icons;
+  font-family: "icons";
   font-display: swap;
   src: url("../fonts/icons.woff2") format("woff2"), url("../fonts/icons.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
-  font-family: Montserrat;
+  font-family: "Montserrat-ExtraBold";
   font-display: swap;
   src: url("../fonts/Montserrat-ExtraBold.woff2") format("woff2"), url("../fonts/Montserrat-ExtraBold.woff") format("woff");
   font-weight: 800;
   font-style: normal;
 }
 @font-face {
-  font-family: Montserrat;
-  font-display: swap;
-  src: url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff");
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: Montserrat;
+  font-family: "Montserrat-Medium";
   font-display: swap;
   src: url("../fonts/Montserrat-Medium.woff2") format("woff2"), url("../fonts/Montserrat-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
-  font-family: Montserrat;
+  font-family: "Montserrat-Regular";
   font-display: swap;
   src: url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
-  font-family: Montserrat;
+  font-family: "Montserrat-SemiBold";
   font-display: swap;
   src: url("../fonts/Montserrat-SemiBold.woff2") format("woff2"), url("../fonts/Montserrat-SemiBold.woff") format("woff");
   font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat-Bold";
+  font-display: swap;
+  src: url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff");
+  font-weight: 700;
   font-style: normal;
 }
 [class*=_icon-]:before {
@@ -244,6 +244,7 @@ picture {
 }
 .subtitle--semiBold {
   font-family: "Montserrat-SemiBold";
+  font-weight: 600;
 }
 .subtitle--left {
   text-align: left;
@@ -269,6 +270,25 @@ picture {
 .text--extrabold {
   font-family: "Montserrat-ExtraBold";
   font-weight: 800;
+}
+.text--bold {
+  font-family: "Montserrat-Bold";
+  font-weight: 700;
+}
+.text--main {
+  color: #363636;
+}
+.text--normal {
+  font-family: "Montserrat-Regular";
+  font-weight: 400;
+}
+.text--small {
+  font-size: 16px;
+  line-height: 20px;
+}
+.text--semiBold {
+  font-family: "Montserrat-SemiBold";
+  font-weight: 600;
 }
 
 [class*=-ibg] {
@@ -868,22 +888,192 @@ p {
 }
 
 .banks {
-  padding: 45px 0 100px;
+  padding: 45px 0 40px;
 }
 .banks__title {
   margin-bottom: 50px;
 }
 .banks__content {
-  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 30px;
 }
 .banks__ipoteka {
-  padding: 0;
-  background: #9fc55a;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 730px;
+  background-color: #9fc55a;
   border-radius: 10px;
 }
-.banks__box-links {
-  background-color: #F8FAFB;
+.banks__box-ipoteka {
+  display: flex;
+  position: relative;
 }
+.banks__stars {
+  position: absolute;
+  right: 30px;
+  top: 25px;
+  z-index: 1;
+}
+.banks__item-ipoteka {
+  padding: 30px 35px 35px 20px;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.banks__img {
+  margin-bottom: 25px;
+}
+.banks__img img,
+.banks__img picture {
+  width: 100%;
+  height: 100%;
+}
+.banks__subtitle {
+  font-size: 24px;
+  line-height: 29px;
+  margin-bottom: 20px;
+}
+.banks__group-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.banks__box-text {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 50%;
+}
+.banks__box-text--caramel {
+  background-color: #e09b58;
+  border-radius: 0px 0px 0px 10px;
+  padding: 20px;
+}
+.banks__box-text--olive-green {
+  background-color: #9fc55a;
+  border-radius: 0px 0px 10px 0px;
+  padding: 20px;
+}
+.banks__text--big {
+  font-size: 24px;
+  line-height: 29px;
+}
+.banks__text--small {
+  font-size: 14px;
+  line-height: 17px;
+}
+.banks__text--width {
+  max-width: 330px;
+  margin-top: 10px;
+}
+.banks__btn {
+  position: relative;
+}
+.banks__btn::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+  max-width: 161px;
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+}
+.banks__box-links {
+  background-color: #f8fafb;
+  display: flex;
+  gap: 30px;
+  padding: 20px;
+}
+.banks__group-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.banks__link {
+  font-family: "Montserrat-Bold";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #363636;
+}
+.banks__card {
+  border: 1px solid #d9d9d9;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 350px;
+  padding: 0;
+}
+.banks__card .banks__group-text {
+  margin-bottom: 0;
+}
+.banks__item {
+  padding: 40px 15px 30px;
+}
+.banks__item .banks__text {
+  margin-bottom: 30px;
+}
+.banks__item .banks__text--info {
+  position: relative;
+  padding-left: 40px;
+  margin-bottom: 0;
+}
+.banks__item .banks__text--info::before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../img/icons/information.svg");
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.documents {
+  padding: 85px 0 100px;
+}
+.documents__title {
+  margin-bottom: 45px;
+}
+.documents__wrapper {
+  gap: 30px;
+  margin: 0;
+}
+.documents__img {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  max-width: 730px;
+}
+.documents__img:first-child {
+  max-width: 350px;
+}
+.documents__item {
+  width: 350px;
+  height: 300px;
+  padding: 85px 20px 0;
+  background-color: #e09b58;
+  border-radius: 10px;
+}
+.documents__text {
+  margin-bottom: 10px;
+}
+.documents__link {
+  display: block;
+  margin-bottom: 7px;
+}
+
 .header__top {
   padding: 10px 0;
 }
@@ -936,6 +1126,114 @@ p {
   font-size: 16px;
   line-height: 20px;
   color: #fff;
+}
+
+.footer {
+  padding: 55px 0 0;
+  background: #1a1a1a;
+  color: #fff;
+}
+.footer__wrapper {
+  margin: 0 0 40px;
+}
+.footer__wrapper:first-child {
+  margin-bottom: 95px;
+}
+.footer__item {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+.footer__item:nth-child(2) {
+  padding-left: 10px;
+}
+.footer__item:nth-child(3) {
+  padding-left: 20px;
+}
+.footer__item--row {
+  flex-direction: row;
+  gap: 20px;
+}
+.footer__title {
+  font-family: "Montserrat-Regular";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  margin: 0 0 12px;
+  position: relative;
+}
+.footer__title--tel {
+  padding-left: 30px;
+}
+.footer__title--tel::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../img/icons/tel-footer.svg");
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.footer__box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+.footer__box--time {
+  padding-left: 30px;
+}
+.footer__box--time::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../img/icons/time-footer.svg");
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.footer__box--mail {
+  padding-left: 30px;
+}
+.footer__box--mail::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../img/icons/mail.svg");
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.footer__text {
+  font-size: 14px;
+  line-height: 17px;
+}
+.footer__link {
+  font-family: "Montserrat-Bold";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #fff;
+}
+.footer__small, .footer__small a {
+  font-family: "Montserrat-Regular";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(255, 255, 255, 0.65);
 }
 
 .logo__img {
