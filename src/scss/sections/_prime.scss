@@ -172,14 +172,14 @@
     position: relative;
     right: 0;
     @include wh(32px);
-    background-color: $textAccentColor;
+   
     border-radius: 50%;
     &:hover {
       // background-color: #3a3a3a;
     }
     &::after {
       @include pseudo;
-      background-color: $textMainColor;
+      
 
       @include wh(11px, 8px);
       @include background(url("@img/icons/Arrow.svg"));
@@ -191,7 +191,7 @@
   .swiper-button-next {
   }
 
-  .swiper-button-prev {
+  .swiper-button-next {
     right: 0px;
 
     &::after {

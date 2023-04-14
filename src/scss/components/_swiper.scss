@@ -25,7 +25,7 @@
   }
   &::after {
     @include pseudo;
-    background-color: $textMainColor;
+   
 
     @include wh(11px, 8px);
     @include background(url("@img/icons/Arrow.svg"));

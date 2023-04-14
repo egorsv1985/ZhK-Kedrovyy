@@ -22,9 +22,9 @@
         </div>
       </div>
     </div>
-    <div class="swiper-scrollbar"></div>
+    <div class="gallery-swiper-scrollbar"></div>
     <div class="gallery__control">     
-      <div class="swiper-pagination"></div>
+      <div class="galler-swiper-pagination"></div>
 
       <div class="gallery__buttons">
         <div class="swiper-button-prev"></div>
@@ -58,7 +58,7 @@
     },
     // включаем полосу прокрутки и выбираем элемент, в котором она будет находиться
     scrollbar: {
-      el: ".swiper-scrollbar",
+      el: ".gallery-swiper-scrollbar",
     },
     // включаем кнопки "вперед" и "назад" для навигации по слайдам
     navigation: {
@@ -67,7 +67,7 @@
     },
     // включаем пагинацию и настраиваем внешний вид номеров слайдов
     pagination: {
-      el: ".swiper-pagination",
+      el: ".galler-swiper-pagination",
       clickable: true,
       // здесь мы используем функцию renderBullet для создания номеров слайдов вида "01/10"
       renderBullet: function (index, className) {
