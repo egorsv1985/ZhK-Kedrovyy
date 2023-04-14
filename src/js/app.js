@@ -221,3 +221,43 @@ window.addEventListener("scroll", () => {
   lastScroll = currentScroll;
 });
 
+// Получаем элементы страницы
+const videoContainer = document.getElementById("video-container");
+const playButton = document.getElementById("play-button");
+const videoFrame = videoContainer.querySelector(".video__frame");
+const videoCover = document.getElementById("video-cover");
+
+// Показываем кнопку "Play"
+playButton.style.display = "block";
+
+// Добавляем обработчик клика на кнопку "Play"
+playButton.addEventListener("click", function () {
+  // Посылаем сообщение в iframe, чтобы начать воспроизведение видео
+  videoFrame.contentWindow.postMessage(
+    '{"event":"command","func":"playVideo","args":""}',
+    "*"
+  );
+  playButton.style.display = "none";
+  // Скрываем заставку видео
+  videoCover.style.display = "none";
+
+  // Добавляем обработчик события "load" на iframe, который будет отслеживать, когда видео закончится
+  videoFrame.addEventListener(
+    "load",
+    function () {
+      // Скрываем кнопку "Play" после окончания воспроизведения видео
+      playButton.style.display = "none";
+    },
+    { once: true }
+  );
+});
+
+// Добавляем обработчик события "load" на iframe
+videoFrame.addEventListener("load", function () {
+  videoCover.style.display = "block";
+});
+// Получаем ссылки на необходимые элементы страницы, такие как контейнер видео, кнопка Play, iframe с видео и заставка.
+// Показываем кнопку "Play" на странице.
+// Добавляем обработчик события click на кнопку Play, который отправляет сообщение в iframe для начала воспроизведения видео, скрывает кнопку Play и заставку.
+// Добавляем обработчик события load на iframe, который отслеживает, когда видео загрузится и скрывает заставку видео.
+// Добавляем внутренний обработчик события load на iframe, который отслеживает окончание воспроизведения видео и скрывает кнопку Play. Для этого мы добавляем параметр { once: true } к addEventListener, который гарантирует, что обработчик будет вызван только один раз.

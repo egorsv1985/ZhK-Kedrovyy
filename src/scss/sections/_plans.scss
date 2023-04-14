@@ -56,7 +56,7 @@
   }
   // .plans__list
   &__list {
-    @include flex(space-between, center, wrap);
+    @include flex(center, center, wrap);
     gap: 30px;
 	padding: 0;
   }
@@ -68,12 +68,14 @@
     background-color: $secondColor;
     border: 1px solid $thirdColor;
     border-radius: 10px;
+    padding: 0 14px;
 	@include flex ($flex-direction: column);
   }
   // .plans__img
   &__img {
     border-radius: 10px;
 	align-self:center;
+  margin-bottom: 15px;
   }
   // .plans__subtitle
   &__subtitle {
@@ -82,15 +84,18 @@
     font-size: 18px;
     line-height: 22px;
     color: $textMainColor;
+    margin-bottom: 10px;
 	
   }
   // .plans__box-content
   &__box-content {
-    @include flex();
+    @include flex($flex-direction: column);
+    gap: 10px;
 	
   }
   // .plans__box-text
   &__box-text {
+    @include flex (space-between, center);
   }
   // .plans__text
   &__text {

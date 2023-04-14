@@ -25,20 +25,50 @@
   letter-spacing: 0.05em;
 
   color: $textSecondColor;
+  &--semiBold {
+    font-family: "Montserrat-SemiBold";
+    font-weight: 600;
+  }
+  &--left {
+    text-align: left;
+  }
+  &--accent {
+    color: $textAccentColor;
+  }
 }
 
 .text {
   font-family: "Montserrat-Medium";
-font-weight: 500;
-font-size: 18px;
-line-height: 22px;
-text-align: center;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
 
-color: $textMainColor;
-
+  color: $textMainColor;
+  &--left {
+    text-align: left;
+  }
+  &--accent {
+    color: $textAccentColor;
+  }
 
   &--extrabold {
     font-family: "Montserrat-ExtraBold";
     font-weight: 800;
+  }
+  &--bold {
+    font-family: "Montserrat-Bold";
+    font-weight: 700;
+  }
+  &--main {
+    color: $textMainColor;
+  }
+  &--normal {
+    font-family: "Montserrat-Regular";
+    font-weight: 400;
+  }
+  &--small {
+    font-size: 16px;
+    line-height: 20px;
   }
 }

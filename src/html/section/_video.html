@@ -1,14 +1,27 @@
 <section class="video">
   <div class="container">
-    <h2 class=video__title title">
-      КОМФОРТ, КРАСОТА, НАДЕЖНОСТЬ<span
-        class="video__title title title--extrabold"
-        >Жизнь в Кедровом</span
+    <h2 class="video__title title">
+      Жизнь в Кедровом
+      <span class="video__title title title--extrabold"
+        >КОМФОРТ, КРАСОТА, НАДЕЖНОСТЬ</span
       >
     </h2>
-	<div class="video__box">
-		<a width="1110px" height="650px" href="https://www.youtube.com/watch?v=cDiWGuqzzio" class="video__link"></a>
-		  </div>
+    <div class="video__box" id="video-container">
+      <div class="video__box-img" id="video-cover">
+        <!-- Заставка видео -->
+        <!-- <img src="@img/prime.jpg" alt="Video Cover Image"> -->
+      </div>
+      <iframe
+        class="video__frame"
+        src="https://www.youtube.com/embed/cDiWGuqzzio"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+      <button class="video__btn" id="play-button"></button>
+    </div>
+    
+
   </div>
- 
 </section>
