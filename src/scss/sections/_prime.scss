@@ -1,131 +1,271 @@
 .prime {
   position: relative;
-  padding-top: 120px;
-  background-image: url("@img/prime.png");
-  background-position: 70px 23px;
-  background-repeat: no-repeat;
-  &::before{
-    @include pseudo;
-    @include background (url("@img/icons/prime-ellipse.svg"));
-    @include wh (1054px);
-    position: absolute;
-    left: 20%;
-    top: 50%;
-    z-index: -1;
-    transform: translate(-50%, -50%);
-  }
-  @include media (max, lg) {
-    background-position: -60px -55px;
-  }
-  
-  margin: 0 auto;
-    max-width: 1800px;
-
-  // .prime__wrapper
-  &__wrapper {
-    @include flex(space-between, center);
-    position: relative;
-    gap: 20px;
-   
-  }
-  // .prime__title
-  &__title {
-    @include media (max, lg) {
-      font-size: 30px;
-    }
-    @include media (max, sm) {
-      font-size: 25px;
-    }
-    &::after {
-      display: none;
-    }
-  }
-  // .prime__box-img
-  &__box-img {
-    width: 610px;
-    height: 844px;
-   
-    @include media(max, lg) {
-      max-width: 100px;
-    }
-
-    &::before {
-      // @include pseudo;
-      position: absolute;
-      top: 27%;
-      left: 0;
-      @include wh(454px);
-      z-index: -1;
-      background-color: #fff;
-      filter: blur(150px);
-
-      @include media(max, xl) {
-        top: 100%;
-        left: 50%;
-
-        transform: translate(-50%, -50%);
-        z-index: -2;
-      }
-    }
-    picture,
-    img {
-      position: absolute;
-      top: 3%;
-      left: -14%;
-      @include media(max, xl) {
-        top: 100%;
-        left: 50%;
-        z-index: -1;
-        transform: translate(-50%, -50%);
-      }
-      @include media(max, sm) {
-        width: 100%;
-        height: 100%;
-        top: 50%;
-      }
-    }
-  }
-  // .prime__img
-  &__img {
-    position: relative;
-    z-index: 1;
-    padding: 0 10px;
-    height: 100%;
-    margin-top: -215px;
-    @include media (max, lg) {
-      margin-top: -140px;
-    }
-  }
+  padding: 390px 0 140px;
   // .prime__content
   &__content {
-    @include flex(space-between, center, $flex-direction: column);
-    gap: 30px;
-   
-    @include media(max, xl) {
-      // margin-top: 150px;
-    }
-    @include media(max, lg) {
-      align-items:flex-start;
+    position: relative;
+    z-index: 2;
+    gap: 4px;
+  }
+  // .prime__content-box
+  &__content-box {
+    margin-top: 10px;
+    &:last-child {
+      position: relative;
+      margin-top: 0;
+      max-width: 255px;
     }
   }
+
+  // .prime__text-box
+  &__text-box {
+    position: relative;
+    margin-top: 0;
+    padding: 70px 20px;
+    @include flex(center, center, $flex-direction: column);
+    width: 255px;
+    height: 255px;
+    border-radius: 50%;
+
+    background-color: $accentColor;
+    box-shadow: 0px 10px 40px rgba(238, 149, 40, 0.6);
+    &::before {
+      @include pseudo;
+      @include wh(240px);
+      border-radius: 50%;
+      position: absolute;
+
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+
+      border: 1px solid #fff;
+    }
+    &::after {
+      @include pseudo;
+      @include background(url("@img/icons/prime-stars.svg"));
+      width: 46px;
+      height: 34px;
+      position: absolute;
+      right: 65px;
+      top: 35px;
+    }
+  }
+
   // .prime__subtitle
   &__subtitle {
   }
-  // .prime__form
-  &__form {
+  // .prime__title
+  &__title {
+    font-family: "Montserrat-ExtraBold";
+    font-weight: 800;
+    font-size: 70px;
+    line-height: 85px;
+
+    color: $textAccentColor;
+  }
+  // .prime__btn
+  &__btn {
+    @include flex($align-items: center);
+    padding: 23px 30px;
+    width: 100%;
+    max-width: 349px;
+    height: 70px;
+
+    background-color: $mainColor;
+    box-shadow: 0px 10px 30px rgba(84, 145, 39, 0.4);
+    border-radius: 73px;
+    font-family: "Montserrat-Medium";
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: $textAccentColor;
+
+    position: relative;
+    margin-top: 62px;
+    &::after {
+      @include pseudo;
+      @include background(url("@img/icons/drag-move-line.svg"));
+      @include wh(24px);
+      position: absolute;
+      right: 21px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    &::before {
+      @include pseudo;
+      @include wh(50px);
+      position: absolute;
+      right: 8px;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(255, 255, 255, 0.4);
+      border-radius: 50%;
+    }
+  }
+  // .prime__text
+  &__text {
+    font-family: "Montserrat-Regular";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+
+    color: $textAccentColor;
   }
 
-  // .prime__ellipse
-  &__ellipse {
+  .text {
+    &--extrabold {
+      font-family: "Montserrat-ExtraBold";
+      font-weight: 800;
+
+      font-size: 64px;
+      line-height: 78px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
+  // .prime__control
+  &__control {
+    margin-top: 10px;
+
+    @include flex(space-between, center);
+    gap: 85px;
+    width: 255px;
+  }
+  // .prime__buttons
+  &__buttons {
+    @include flex(space-between, center);
+    gap: 20px;
+
+    height: 32px;
+  }
+
+  .swiper {
     position: absolute;
-    width: 545px;
-    height: 545px;
-    right: -10%;
-    bottom: 0;
-    border-radius: 50%;
-
-    background-color: rgba(234, 0, 70, 0.7);
-    filter: blur(150px);
-    z-index: -1;
+    top: 0;
+    max-width: 100%;
+    // z-index: -1;
   }
+  .primeSwiper {
+  }
+  .swiper-wrapper {
+  }
+  .swiper-slide {
+    position: relative;
+    max-height: 888px;
+    &::before {
+      @include pseudo;
+
+      position: absolute;
+      @include wh(100%);
+      left: 0px;
+      top: 0;
+
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+   
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    position: relative;
+    right: 0;
+    @include wh(32px);
+    background-color: $textAccentColor;
+    border-radius: 50%;
+    &:hover {
+      // background-color: #3a3a3a;
+    }
+    &::after {
+      @include pseudo;
+      background-color: $textMainColor;
+
+      @include wh(11px, 8px);
+      @include background(url("@img/icons/Arrow.svg"));
+      @include pos(absolute, $top: 50%, $left: 56%);
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  .swiper-button-next {
+  }
+
+  .swiper-button-prev {
+    right: 0px;
+
+    &::after {
+      transform: translate(-50%, -50%) rotate(180deg);
+      left: 42%;
+    }
+  }
+
+  .swiper-button-disabled {
+    &::after {
+      @include background(url(../img/icons/arrow.svg));
+    }
+  }
+
+  .swiper-button-prev.swiper-button-disabled {
+    &::after {
+      // transform: translate(-50%, -50%) rotate(0deg);
+    }
+  }
+
+  .swiper-button-next.swiper-button-disabled {
+    &::after {
+      // transform: translate(-50%, -50%) rotate(180deg);
+    }
+  }
+  .swiper-scrollbar {
+    margin-top: 45px;
+    position: relative;
+    background: $textAccentColor;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    max-width: 255px;
+    &-drag {
+     
+    }
+  }
+  .swiper-pagination {
+    max-width: 255px;
+    position: relative;
+    display: flex;
+  }
+  .swiper-pagination-bullet {
+    opacity: 0;
+    &-active {
+      opacity: 1;
+      width: 0;
+      font-family: "Montserrat-SemiBold";
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 20px;
+      /* identical to box height */
+
+      color: $textAccentColor;
+    }
+  }
+}
+.container {
+}
+.row {
+}
+.col-9 {
+}
+.subtitle {
+}
+.title {
+}
+.btn {
+}
+.col-3 {
+}
+.text {
+}
+.text--extrabold {
+}
+.container-fluid {
 }

@@ -7,30 +7,32 @@
     </h2>
 
     <!-- Slider main container -->
-  </div>
-  <div class="container-fluid">
+
+    <!-- Swiper -->
     <div class="swiper gallerySwiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
-          <img src="@img/prime.png" />
+          <img src="@img/prime4.jpg" alt="prime-foto" />
         </div>
         <div class="swiper-slide">
-          <img src="@img/prime2.jpg" />
+          <img src="@img/prime.jpg" alt="prime-foto" />
         </div>
         <div class="swiper-slide">
-          <img src="@img/prime3.jpg" />
+          <img src="@img/prime3.jpg" alt="prime-foto" />
         </div>
       </div>
-      <!-- <div class="gallery__buttons"> -->
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-      <!-- </div> -->
-
-      <div class="swiper-scrollbar"></div>
-      <div class="swiper-pagination"></div>
     </div>
+    <div class="swiper-scrollbar"></div>
+    <div class="gallery__control">     
+      <div class="swiper-pagination"></div>
+
+      <div class="gallery__buttons">
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+    <!-- Swiper -->
   </div>
-  <!-- Swiper -->
 </section>
 
 <!-- Swiper JS -->
@@ -38,7 +40,7 @@
 
 <!-- Initialize Swiper -->
 <script>
-  // выбираем элемент с классом "gallerySwiper" и создаем новый Swiper объект
+  // выбираем элемент с классом "primeSwiper" и создаем новый Swiper объект
   var swiper = new Swiper(".gallerySwiper", {
     // задаем количество слайдов, которые будут показываться одновременно
     slidesPerView: 1,
@@ -82,3 +84,4 @@
     },
   });
 </script>
+

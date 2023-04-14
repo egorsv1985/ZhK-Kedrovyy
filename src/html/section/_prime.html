@@ -1,43 +1,47 @@
 <section class="prime">
   <div class="container">
     <div class="prime__content row">
-      <div class="prime__content-box flex-column col-9">
+      <div class="prime__content-box col-9">
         <h2 class="prime__subtitle subtitle">Квартира в ЖК</h2>
-        <h1 class="prime__title title">«КЕДРОВЫЙ» УЖЕ РЕАЛЬНОСТЬ!</h1>
+        <h1 class="prime__title">
+          «КЕДРОВЫЙ»<br>
+          УЖЕ РЕАЛЬНОСТЬ!
+        </h1>
         <a class="prime__btn btn" href="#about" role="button"
           >Смотреть планировки</a
         >
       </div>
       <div class="prime__content-box col-3">
-        <p class="prime__text text text--extrabold">20+</p>
-        <p class="prime__text text">Лет успешного опыта на рынке</p>
+        <div class="prime__text-box">
+          <p class="prime__text text text--extrabold">20+</p>
+          <p class="prime__text text">Лет успешного опыта на рынке</p>
+        </div>
+        <div class="swiper-scrollbar"></div>
+        <div class="prime__control">
+          <div class="swiper-pagination"></div>
+          <div class="prime__buttons">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
       </div>
     </div>
-   
   </div>
-  <div class="container-fluid">
-    <div class="swiper primeSwiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <img src="@img/prime.png" />
-        </div>
-        <div class="swiper-slide">
-          <img src="@img/prime2.jpg" />
-        </div>
-        <div class="swiper-slide">
-          <img src="@img/prime3.jpg" />
-        </div>
+ <!-- Swiper -->
+  <div class="swiper primeSwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="@img/prime.jpg" alt="prime-foto">
       </div>
-      <!-- <div class="gallery__buttons"> -->
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-      <!-- </div> -->
+      <div class="swiper-slide">
+        <img src="@img/prime2.jpg" alt="prime-foto">
+      </div>
+      <div class="swiper-slide">
+        <img src="@img/prime3.jpg" alt="prime-foto">
+      </div>
+    </div>
+  </div>
 
-      <div class="swiper-scrollbar"></div>
-      <div class="swiper-pagination"></div>
-    </div>
-  </div>
-  <!-- Swiper -->
 </section>
 
 <!-- Swiper JS -->
@@ -89,4 +93,3 @@
     },
   });
 </script>
-

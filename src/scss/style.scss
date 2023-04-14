@@ -17,11 +17,15 @@ $fontFamily: "Montserrat-Regular";
 $fontSize: rem(18); // где 18(px) - размер шрифта по умолчанию из макета
 
 // Основные цвета
-$mainColor: #363636;
+$mainColor: #9FC55A;
 $textMainColor: #363636;
 $textAccentColor: #fff;
+$textSecondColor: #E09B58;
 $accentColor: #E09B58;
-$svgColor: #F9D4A8;
+$textTabColor: #9FC55A;
+$secondColor: #fff;
+$thirdColor: #d9D9D9;
+$textThirdColor: #585858;
 
 // НАСТРОЙКИ ===============================================================================================================================================================================================================================================================================================
 // Минимальная ширина страницы
@@ -159,7 +163,7 @@ picture{
 // components
 
 // @import "./components/burger";
-// @import "./components/swiper";
+@import "./components/swiper";
 // @import "./components/social";
 // @import "./components/scroll-header";
 
@@ -167,11 +171,11 @@ picture{
 
 // sections
 
-// @import "./sections/prime";
-// @import "./sections/gallery";
-// @import "./sections/about";
-// @import "./sections/train";
-// @import "./sections/trainer";
+@import "./sections/prime";
+@import "./sections/advantages";
+@import "./sections/gallery";
+@import "./sections/build-progress";
+@import "./sections/plans";
 // @import "./sections/contacts";
 // @import "./sections/cards";
 // @import "./sections/kids";

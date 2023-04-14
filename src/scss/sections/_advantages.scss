@@ -1,0 +1,62 @@
+.advantages {
+  padding: 115px 0 80px;
+  // .advantages__title
+  &__title {
+    margin-bottom: 70px;
+  }
+  // .advantages__content
+  &__content {
+    row-gap: 80px;
+  }
+  // .advantages__box
+  &__box {
+    @include flex($align-items: center, $flex-direction: column);
+    gap: 20px;
+  }
+  // .advantages__box-img
+  &__box-img {
+    position: relative;
+    &::before {
+      @include pseudo;
+      @include wh(55px);
+      border-radius: 50%;
+      position: absolute;
+
+      left: -20px;
+      top: -10px;
+
+      background-color: $accentColor;
+      border: 1px solid $accentColor;
+      z-index: -1;
+    }
+    &::after {
+      @include pseudo;
+      @include background(url("@img/icons/advantages-stars.svg"));
+      width: 33px;
+      height: 31px;
+      position: absolute;
+      right: -20px;
+      top: -10px;
+      z-index: -1;
+    }
+  }
+  // .advantages__img
+  &__img {
+  }
+  // .advantages__text
+  &__text {
+    max-width: 270px;
+  }
+}
+.container {
+}
+.title {
+}
+.title--extrabold {
+}
+.row {
+}
+.col-4 {
+}
+.text {
+}
