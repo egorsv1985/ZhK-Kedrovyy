@@ -1,30 +1,30 @@
-<!-- <section class="gallery" id="gallery">
+<section class="gallery" id="gallery">
   <div class="container">
     <h2 class="gallery__title title">
       Галерея<span class="gallery__title title title--extrabold"
         >СДАННЫХ ДОМОВ</span
       >
-    </h2> -->
+    </h2>
 
     <!-- Slider main container -->
 
     <!-- Swiper -->
-    <!-- <div class="swiper gallerySwiper">
+    <div class="swiper gallerySwiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <img src="@img/prime4.jpg" alt="prime-foto" />
         </div>
         <div class="swiper-slide">
-          <img src="@img/prime.jpg" alt="prime-foto" />
+          <img src="@img/prime4.jpg" alt="prime-foto" />
         </div>
         <div class="swiper-slide">
-          <img src="@img/prime3.jpg" alt="prime-foto" />
+          <img src="@img/prime4.jpg" alt="prime-foto" />
         </div>
       </div>
     </div>
-    <div class="gallery-swiper-scrollbar"></div>
+    <div class="swiper-scrollbar"></div>
     <div class="gallery__control">     
-      <div class="galler-swiper-pagination"></div>
+      <div class="swiper-pagination"></div>
 
       <div class="gallery__buttons">
         <div class="swiper-button-prev"></div>
@@ -32,10 +32,10 @@
       </div>
     </div>
   </div>
-</section> -->
+</section>
 
 <!-- Swiper JS -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script> -->
 
 <!-- Initialize Swiper -->
 <script>
@@ -57,16 +57,16 @@
     },
     // включаем полосу прокрутки и выбираем элемент, в котором она будет находиться
     scrollbar: {
-      el: ".gallery-swiper-scrollbar",
+      el: ".gallery .swiper-scrollbar",
     },
     // включаем кнопки "вперед" и "назад" для навигации по слайдам
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: ".gallery .swiper-button-next",
+      prevEl: ".gallery .swiper-button-prev",
     },
     // включаем пагинацию и настраиваем внешний вид номеров слайдов
     pagination: {
-      el: ".galler-swiper-pagination",
+      el: ".gallery .swiper-pagination",
       clickable: true,
       // здесь мы используем функцию renderBullet для создания номеров слайдов вида "01/10"
       renderBullet: function (index, className) {

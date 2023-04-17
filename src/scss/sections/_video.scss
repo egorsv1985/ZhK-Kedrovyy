@@ -43,20 +43,22 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
-    @include background(url("@img/icons/play.svg"));
-    @include wh(56px);
-
+    @include wh(156px);
+    background-color: $accentColor;
+    border-radius: 50%;
+    box-shadow: 0px 10px 40px rgba(238, 149, 40, 0.6);
     &::after {
+      @include background(url("@img/icons/play.svg"));
+      @include wh(40px, 46px);
       @include pseudo;
-      @include wh(156px);
+     
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
 
-      background-color: $accentColor;
-      border-radius: 50%;
-      box-shadow: 0px 10px 40px rgba(238, 149, 40, 0.6);
+     
+     
       
     }
     &::before {

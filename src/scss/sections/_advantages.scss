@@ -7,11 +7,19 @@
   // .advantages__content
   &__content {
     row-gap: 80px;
+    @include media(max, sm) {
+      column-gap: 10px;
+      justify-content: center;
+    }
   }
   // .advantages__box
   &__box {
     @include flex($align-items: center, $flex-direction: column);
     gap: 20px;
+    @include media(max, md) {
+      flex-direction: row;
+      gap: 40px;
+    }
   }
   // .advantages__box-img
   &__box-img {
@@ -46,17 +54,8 @@
   // .advantages__text
   &__text {
     max-width: 270px;
+    @include media(max, sm) {
+      text-align: left;
+    }
   }
-}
-.container {
-}
-.title {
-}
-.title--extrabold {
-}
-.row {
-}
-.col-4 {
-}
-.text {
 }

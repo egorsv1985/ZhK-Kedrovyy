@@ -3,8 +3,10 @@
 .title {
   font-family: "Montserrat-Medium";
   font-weight: 500;
-  font-size: 36px;
-  line-height: 44px;
+  --title-size: clamp(24px, 1.11vw + 20px, 36px);
+  --title-line-height: clamp(28px, 1.48vw + 22.67px, 44px);
+  font-size: var(--title-size);
+  line-height: var(--title-line-height);
   text-align: center;
 
   color: $textSecondColor;

@@ -6,16 +6,18 @@
   }
   // .banks__content
   &__content {
-    @include flex( $flex-wrap: wrap);
-    gap: 30px;
-	margin-bottom: 30px;
+    @include flex($flex-wrap: wrap);
+    .row{
+      row-gap: 30px;
+    }
+    // margin-bottom: 30px;
   }
   // .banks__ipoteka
   &__ipoteka {
-    @include flex( $flex-direction: column);
+    @include flex($flex-direction: column);
 
-    width: 100%;
-	max-width: 730px;
+    // width: 100%;
+    // max-width: 730px;
 
     background-color: $mainColor;
     border-radius: 10px;
@@ -24,6 +26,25 @@
   &__box-ipoteka {
     @include flex();
     position: relative;
+    @include media (max, sm) {
+      flex-direction: column;
+      justify-content: center;
+    }
+    &::before {
+      @include pseudo;
+      @include wh(166px);
+
+      position: absolute;
+
+      left: -45px;
+      top: -45px;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.3);
+      animation-name: scale-animation;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+    }
   }
   // .banks__stars
   &__stars {
@@ -37,6 +58,9 @@
     padding: 30px 35px 35px 20px;
     @include flex($flex-direction: column);
     width: 50%;
+    @include media (max, sm) {
+      width: 100%;
+    }
   }
   // .banks__img
   &__img {
@@ -67,16 +91,19 @@
     &--caramel {
       background-color: $accentColor;
       border-radius: 0px 0px 0px 10px;
-	  padding: 20px;
+      padding: 20px;
     }
     &--olive-green {
       background-color: $mainColor;
       border-radius: 0px 0px 10px 0px;
-	  padding: 20px;
+      padding: 20px;
     }
   }
   // .banks__text
   &__text {
+    @include media (max, md){
+      text-align: center;
+    }
     &--big {
       font-size: 24px;
       line-height: 29px;
@@ -85,10 +112,10 @@
       font-size: 14px;
       line-height: 17px;
     }
-	&--width{
-		max-width: 330px;
-		margin-top: 10px;
-	}
+    &--width {
+      max-width: 330px;
+      margin-top: 10px;
+    }
   }
 
   // .banks__btn
@@ -109,9 +136,12 @@
   // .banks__box-links
   &__box-links {
     background-color: $bgColor;
-	display: flex;
-	gap: 30px;
-	padding: 20px;
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+    @include media (max, sm){
+      flex-direction: column;
+    }
   }
   // .banks__group-links
   &__group-links {
@@ -130,24 +160,24 @@
   &__card {
     border: 1px solid $thirdColor;
     border-radius: 10px;
-width: 100%;
-max-width: 350px;
-padding: 0;
+    // width: 100%;
+    // max-width: 350px;
+    // padding: 0;
 
-    .banks__group-text{
-		margin-bottom: 0;
-	}
+    .banks__group-text {
+      margin-bottom: 0;
+    }
   }
 
   // .banks__item
   &__item {
-	padding: 40px 15px 30px;
+    padding: 40px 15px 30px;
     .banks__text {
       margin-bottom: 30px;
       &--info {
         position: relative;
         padding-left: 40px;
-		margin-bottom: 0;
+        margin-bottom: 0;
         &::before {
           @include pseudo;
           @include wh(24px);
@@ -159,7 +189,19 @@ padding: 0;
         }
       }
     }
-	
   }
- 
+}
+@keyframes scale-animation {
+  0% {
+    transform: scale(1);
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  50% {
+    transform: scale(2.5);
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  100% {
+    transform: scale(1);
+    background-color: rgba(255, 255, 255, 0.3);
+  }
 }
