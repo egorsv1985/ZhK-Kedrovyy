@@ -5,8 +5,12 @@
         >КВАРТИР В ЖК «КЕДРОВЫЙ»</span
       >
     </h2>
-    <ul class="plans__tablist nav nav-tabs" id="myTab" role="tablist">
-      <li class="plans__item nav-item" role="presentation">
+    <ul
+      class="plans__tablist nav nav-tabs row justify-content-between"
+      id="myTab"
+      role="tablist"
+    >
+      <li class="plans__item nav-item col-4" role="presentation">
         <a
           class="plans__link nav-link active"
           id="home-tab"
@@ -18,7 +22,7 @@
           >1-комнатные</a
         >
       </li>
-      <li class="plans__item nav-item" role="presentation">
+      <li class="plans__item nav-item col-4" role="presentation">
         <a
           class="plans__link nav-link"
           id="profile-tab"
@@ -30,7 +34,7 @@
           >2-комнатные</a
         >
       </li>
-      <li class="plans__item nav-item" role="presentation">
+      <li class="plans__item nav-item col-4" role="presentation">
         <a
           class="plans__link nav-link"
           id="messages-tab"
@@ -51,92 +55,182 @@
         role="tabpanel"
         aria-labelledby="home-tab"
       >
-        <ul class="plans__list">
-          <li class="plans__content-item">
-            <img src="@img/plan1.png" alt="plans" class="plans__img" />
-            <h3 class="plans__subtitle">1-комнатная квартира</h3>
-            <div class="plans__box-content">
-              <div class="plans__box-text">
-                <p class="plans__text">Общая площадь</p>
-                <p class="plans__text">47,91 м2</p>
+        <div class="row">
+          <div class="col-12 col-sm-6 col-md-4 my-3">
+            <div class="plans__content-item">
+              <div class="row">
+                <div
+                  class="col-12 d-flex justify-content-center align-items-center"
+                >
+                  <img
+                    src="@img/plan1.png"
+                    alt="plans"
+                    class="plans__img w-100 h-100"
+                  />
+                </div>
               </div>
-              <div class="plans__box-text">
-                <p class="plans__text">Кухня</p>
-                <p class="plans__text">10,51 м2</p>
+              <div class="row">
+                <div class="col-12 mt-3 mb-2">
+                  <h3 class="plans__subtitle">1-комнатная квартира</h3>
+                </div>
               </div>
-            </div>
-          </li>
-          <li class="plans__content-item">
-            <img src="@img/plan2.png" alt="plans" class="plans__img" />
-            <h3 class="plans__subtitle">1-комнатная квартира</h3>
-            <div class="plans__box-content">
-              <div class="plans__box-text">
-                <p class="plans__text">Общая площадь</p>
-                <p class="plans__text">47,91 м2</p>
+
+              <div class="plans__box-text row justify-content-between">
+                <p class="plans__text col-6">Общая площадь</p>
+                <p class="plans__text col-6 text-end">47,91 м2</p>
               </div>
-              <div class="plans__box-text">
-                <p class="plans__text">Кухня</p>
-                <p class="plans__text">10,51 м2</p>
-              </div>
-            </div>
-          </li>
-          <li class="plans__content-item">
-            <img src="@img/plan3.png" alt="plans" class="plans__img" />
-            <h3 class="plans__subtitle">1-комнатная квартира</h3>
-            <div class="plans__box-content">
-              <div class="plans__box-text">
-                <p class="plans__text">Общая площадь</p>
-                <p class="plans__text">47,91 м2</p>
-              </div>
-              <div class="plans__box-text">
-                <p class="plans__text">Кухня</p>
-                <p class="plans__text">10,51 м2</p>
+              <div class="plans__box-text row justify-content-between mt-2">
+                <p class="plans__text col-6">Кухня</p>
+                <p class="plans__text col-6 text-end">10,51 м2</p>
               </div>
             </div>
-          </li>
-          <li class="plans__content-item">
-            <img src="@img/plan4.png" alt="plans" class="plans__img" />
-            <h3 class="plans__subtitle">1-комнатная квартира</h3>
-            <div class="plans__box-content">
-              <div class="plans__box-text">
-                <p class="plans__text">Общая площадь</p>
-                <p class="plans__text">47,91 м2</p>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 my-3">
+            <div class="plans__content-item">
+              <div class="row">
+                <div
+                  class="col-12 d-flex justify-content-center align-items-center"
+                >
+                  <img
+                    src="@img/plan1.png"
+                    alt="plans"
+                    class="plans__img w-100 h-100"
+                  />
+                </div>
               </div>
-              <div class="plans__box-text">
-                <p class="plans__text">Кухня</p>
-                <p class="plans__text">10,51 м2</p>
+              <div class="row">
+                <div class="col-12 mt-3 mb-2">
+                  <h3 class="plans__subtitle">1-комнатная квартира</h3>
+                </div>
               </div>
-            </div>
-          </li>
-          <li class="plans__content-item">
-            <img src="@img/plan5.png" alt="plans" class="plans__img" />
-            <h3 class="plans__subtitle">2-комнатная квартира</h3>
-            <div class="plans__box-content">
-              <div class="plans__box-text">
-                <p class="plans__text">Общая площадь</p>
-                <p class="plans__text">47,91 м2</p>
+
+              <div class="plans__box-text row justify-content-between">
+                <p class="plans__text col-6">Общая площадь</p>
+                <p class="plans__text col-6 text-end">47,91 м2</p>
               </div>
-              <div class="plans__box-text">
-                <p class="plans__text">Кухня</p>
-                <p class="plans__text">10,51 м2</p>
-              </div>
-            </div>
-          </li>
-          <li class="plans__content-item">
-            <img src="@img/plan6.png" alt="plans" class="plans__img" />
-            <h3 class="plans__subtitle">3-комнатная квартира</h3>
-            <div class="plans__box-content">
-              <div class="plans__box-text">
-                <p class="plans__text">Общая площадь</p>
-                <p class="plans__text">47,91 м2</p>
-              </div>
-              <div class="plans__box-text">
-                <p class="plans__text">Кухня</p>
-                <p class="plans__text">10,51 м2</p>
+              <div class="plans__box-text row justify-content-between mt-2">
+                <p class="plans__text col-6">Кухня</p>
+                <p class="plans__text col-6 text-end">10,51 м2</p>
               </div>
             </div>
-          </li>
-        </ul>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 my-3">
+            <div class="plans__content-item">
+              <div class="row">
+                <div
+                  class="col-12 d-flex justify-content-center align-items-center"
+                >
+                  <img
+                    src="@img/plan1.png"
+                    alt="plans"
+                    class="plans__img w-100 h-100"
+                  />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 mt-3 mb-2">
+                  <h3 class="plans__subtitle">1-комнатная квартира</h3>
+                </div>
+              </div>
+
+              <div class="plans__box-text row justify-content-between">
+                <p class="plans__text col-6">Общая площадь</p>
+                <p class="plans__text col-6 text-end">47,91 м2</p>
+              </div>
+              <div class="plans__box-text row justify-content-between mt-2">
+                <p class="plans__text col-6">Кухня</p>
+                <p class="plans__text col-6 text-end">10,51 м2</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 my-3">
+            <div class="plans__content-item">
+              <div class="row">
+                <div
+                  class="col-12 d-flex justify-content-center align-items-center"
+                >
+                  <img
+                    src="@img/plan1.png"
+                    alt="plans"
+                    class="plans__img w-100 h-100"
+                  />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 mt-3 mb-2">
+                  <h3 class="plans__subtitle">1-комнатная квартира</h3>
+                </div>
+              </div>
+
+              <div class="plans__box-text row justify-content-between">
+                <p class="plans__text col-6">Общая площадь</p>
+                <p class="plans__text col-6 text-end">47,91 м2</p>
+              </div>
+              <div class="plans__box-text row justify-content-between mt-2">
+                <p class="plans__text col-6">Кухня</p>
+                <p class="plans__text col-6 text-end">10,51 м2</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 my-3">
+            <div class="plans__content-item">
+              <div class="row">
+                <div
+                  class="col-12 d-flex justify-content-center align-items-center"
+                >
+                  <img
+                    src="@img/plan1.png"
+                    alt="plans"
+                    class="plans__img w-100 h-100"
+                  />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 mt-3 mb-2">
+                  <h3 class="plans__subtitle">1-комнатная квартира</h3>
+                </div>
+              </div>
+
+              <div class="plans__box-text row justify-content-between">
+                <p class="plans__text col-6">Общая площадь</p>
+                <p class="plans__text col-6 text-end">47,91 м2</p>
+              </div>
+              <div class="plans__box-text row justify-content-between mt-2">
+                <p class="plans__text col-6">Кухня</p>
+                <p class="plans__text col-6 text-end">10,51 м2</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 my-3">
+            <div class="plans__content-item">
+              <div class="row">
+                <div
+                  class="col-12 d-flex justify-content-center align-items-center"
+                >
+                  <img
+                    src="@img/plan1.png"
+                    alt="plans"
+                    class="plans__img w-100 h-100"
+                  />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 mt-3 mb-2">
+                  <h3 class="plans__subtitle">1-комнатная квартира</h3>
+                </div>
+              </div>
+
+              <div class="plans__box-text row justify-content-between">
+                <p class="plans__text col-6">Общая площадь</p>
+                <p class="plans__text col-6 text-end">47,91 м2</p>
+              </div>
+              <div class="plans__box-text row justify-content-between mt-2">
+                <p class="plans__text col-6">Кухня</p>
+                <p class="plans__text col-6 text-end">10,51 м2</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <div
         class="plans__tab-pane tab-pane"
@@ -144,92 +238,182 @@
         role="tabpanel"
         aria-labelledby="profile-tab"
       >
-        <ul class="plans__list">
-          <li class="plans__content-item">
-            <img src="@img/plan1.png" alt="plans" class="plans__img" />
-            <h3 class="plans__subtitle">2-комнатная квартира</h3>
-            <div class="plans__box-content">
-              <div class="plans__box-text">
-                <p class="plans__text">Общая площадь</p>
-                <p class="plans__text">47,91 м2</p>
-              </div>
-              <div class="plans__box-text">
-                <p class="plans__text">Кухня</p>
-                <p class="plans__text">10,51 м2</p>
-              </div>
-            </div>
-          </li>
-          <li class="plans__content-item">
-            <img src="@img/plan2.png" alt="plans" class="plans__img" />
-            <h3 class="plans__subtitle">2-комнатная квартира</h3>
-            <div class="plans__box-content">
-              <div class="plans__box-text">
-                <p class="plans__text">Общая площадь</p>
-                <p class="plans__text">47,91 м2</p>
-              </div>
-              <div class="plans__box-text">
-                <p class="plans__text">Кухня</p>
-                <p class="plans__text">10,51 м2</p>
+      <div class="row">
+        <div class="col-12 col-sm-6 col-md-4 my-3">
+          <div class="plans__content-item">
+            <div class="row">
+              <div
+                class="col-12 d-flex justify-content-center align-items-center"
+              >
+                <img
+                  src="@img/plan1.png"
+                  alt="plans"
+                  class="plans__img w-100 h-100"
+                />
               </div>
             </div>
-          </li>
-          <li class="plans__content-item">
-            <img src="@img/plan3.png" alt="plans" class="plans__img" />
-            <h3 class="plans__subtitle">2-комнатная квартира</h3>
-            <div class="plans__box-content">
-              <div class="plans__box-text">
-                <p class="plans__text">Общая площадь</p>
-                <p class="plans__text">47,91 м2</p>
-              </div>
-              <div class="plans__box-text">
-                <p class="plans__text">Кухня</p>
-                <p class="plans__text">10,51 м2</p>
+            <div class="row">
+              <div class="col-12 mt-3 mb-2">
+                <h3 class="plans__subtitle">1-комнатная квартира</h3>
               </div>
             </div>
-          </li>
-          <li class="plans__content-item">
-            <img src="@img/plan4.png" alt="plans" class="plans__img" />
-            <h3 class="plans__subtitle">2-комнатная квартира</h3>
-            <div class="plans__box-content">
-              <div class="plans__box-text">
-                <p class="plans__text">Общая площадь</p>
-                <p class="plans__text">47,91 м2</p>
-              </div>
-              <div class="plans__box-text">
-                <p class="plans__text">Кухня</p>
-                <p class="plans__text">10,51 м2</p>
+
+            <div class="plans__box-text row justify-content-between">
+              <p class="plans__text col-6">Общая площадь</p>
+              <p class="plans__text col-6 text-end">47,91 м2</p>
+            </div>
+            <div class="plans__box-text row justify-content-between mt-2">
+              <p class="plans__text col-6">Кухня</p>
+              <p class="plans__text col-6 text-end">10,51 м2</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 my-3">
+          <div class="plans__content-item">
+            <div class="row">
+              <div
+                class="col-12 d-flex justify-content-center align-items-center"
+              >
+                <img
+                  src="@img/plan1.png"
+                  alt="plans"
+                  class="plans__img w-100 h-100"
+                />
               </div>
             </div>
-          </li>
-          <li class="plans__content-item">
-            <img src="@img/plan5.png" alt="plans" class="plans__img" />
-            <h3 class="plans__subtitle">2-комнатная квартира</h3>
-            <div class="plans__box-content">
-              <div class="plans__box-text">
-                <p class="plans__text">Общая площадь</p>
-                <p class="plans__text">47,91 м2</p>
-              </div>
-              <div class="plans__box-text">
-                <p class="plans__text">Кухня</p>
-                <p class="plans__text">10,51 м2</p>
+            <div class="row">
+              <div class="col-12 mt-3 mb-2">
+                <h3 class="plans__subtitle">1-комнатная квартира</h3>
               </div>
             </div>
-          </li>
-          <li class="plans__content-item">
-            <img src="@img/plan6.png" alt="plans" class="plans__img" />
-            <h3 class="plans__subtitle">2-комнатная квартира</h3>
-            <div class="plans__box-content">
-              <div class="plans__box-text">
-                <p class="plans__text">Общая площадь</p>
-                <p class="plans__text">47,91 м2</p>
-              </div>
-              <div class="plans__box-text">
-                <p class="plans__text">Кухня</p>
-                <p class="plans__text">10,51 м2</p>
+
+            <div class="plans__box-text row justify-content-between">
+              <p class="plans__text col-6">Общая площадь</p>
+              <p class="plans__text col-6 text-end">47,91 м2</p>
+            </div>
+            <div class="plans__box-text row justify-content-between mt-2">
+              <p class="plans__text col-6">Кухня</p>
+              <p class="plans__text col-6 text-end">10,51 м2</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 my-3">
+          <div class="plans__content-item">
+            <div class="row">
+              <div
+                class="col-12 d-flex justify-content-center align-items-center"
+              >
+                <img
+                  src="@img/plan1.png"
+                  alt="plans"
+                  class="plans__img w-100 h-100"
+                />
               </div>
             </div>
-          </li>
-        </ul>
+            <div class="row">
+              <div class="col-12 mt-3 mb-2">
+                <h3 class="plans__subtitle">1-комнатная квартира</h3>
+              </div>
+            </div>
+
+            <div class="plans__box-text row justify-content-between">
+              <p class="plans__text col-6">Общая площадь</p>
+              <p class="plans__text col-6 text-end">47,91 м2</p>
+            </div>
+            <div class="plans__box-text row justify-content-between mt-2">
+              <p class="plans__text col-6">Кухня</p>
+              <p class="plans__text col-6 text-end">10,51 м2</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 my-3">
+          <div class="plans__content-item">
+            <div class="row">
+              <div
+                class="col-12 d-flex justify-content-center align-items-center"
+              >
+                <img
+                  src="@img/plan1.png"
+                  alt="plans"
+                  class="plans__img w-100 h-100"
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 mt-3 mb-2">
+                <h3 class="plans__subtitle">1-комнатная квартира</h3>
+              </div>
+            </div>
+
+            <div class="plans__box-text row justify-content-between">
+              <p class="plans__text col-6">Общая площадь</p>
+              <p class="plans__text col-6 text-end">47,91 м2</p>
+            </div>
+            <div class="plans__box-text row justify-content-between mt-2">
+              <p class="plans__text col-6">Кухня</p>
+              <p class="plans__text col-6 text-end">10,51 м2</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 my-3">
+          <div class="plans__content-item">
+            <div class="row">
+              <div
+                class="col-12 d-flex justify-content-center align-items-center"
+              >
+                <img
+                  src="@img/plan1.png"
+                  alt="plans"
+                  class="plans__img w-100 h-100"
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 mt-3 mb-2">
+                <h3 class="plans__subtitle">3-комнатная квартира</h3>
+              </div>
+            </div>
+
+            <div class="plans__box-text row justify-content-between">
+              <p class="plans__text col-6">Общая площадь</p>
+              <p class="plans__text col-6 text-end">47,91 м2</p>
+            </div>
+            <div class="plans__box-text row justify-content-between mt-2">
+              <p class="plans__text col-6">Кухня</p>
+              <p class="plans__text col-6 text-end">10,51 м2</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 my-3">
+          <div class="plans__content-item">
+            <div class="row">
+              <div
+                class="col-12 d-flex justify-content-center align-items-center"
+              >
+                <img
+                  src="@img/plan1.png"
+                  alt="plans"
+                  class="plans__img w-100 h-100"
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 mt-3 mb-2">
+                <h3 class="plans__subtitle">3-комнатная квартира</h3>
+              </div>
+            </div>
+
+            <div class="plans__box-text row justify-content-between">
+              <p class="plans__text col-6">Общая площадь</p>
+              <p class="plans__text col-6 text-end">47,91 м2</p>
+            </div>
+            <div class="plans__box-text row justify-content-between mt-2">
+              <p class="plans__text col-6">Кухня</p>
+              <p class="plans__text col-6 text-end">10,51 м2</p>
+            </div>
+          </div>
+        </div>
+      </div>
       </div>
       <div
         class="plans__tab-pane tab-pane"
@@ -237,95 +421,182 @@
         role="tabpanel"
         aria-labelledby="messages-tab"
       >
-        <ul class="plans__list">
-          <li class="plans__content-item">
-            <img src="@img/plan1.png" alt="plans" class="plans__img" />
-            <h3 class="plans__subtitle">3-комнатная квартира</h3>
-            <div class="plans__box-content">
-              <div class="plans__box-text">
-                <p class="plans__text">Общая площадь</p>
-                <p class="plans__text">47,91 м2</p>
-              </div>
-              <div class="plans__box-text">
-                <p class="plans__text">Кухня</p>
-                <p class="plans__text">10,51 м2</p>
-              </div>
-            </div>
-          </li>
-          <li class="plans__content-item">
-            <img src="@img/plan2.png" alt="plans" class="plans__img" />
-            <h3 class="plans__subtitle">3-комнатная квартира</h3>
-            <div class="plans__box-content">
-              <div class="plans__box-text">
-                <p class="plans__text">Общая площадь</p>
-                <p class="plans__text">47,91 м2</p>
-              </div>
-              <div class="plans__box-text">
-                <p class="plans__text">Кухня</p>
-                <p class="plans__text">10,51 м2</p>
+      <div class="row">
+        <div class="col-12 col-sm-6 col-md-4 my-3">
+          <div class="plans__content-item">
+            <div class="row">
+              <div
+                class="col-12 d-flex justify-content-center align-items-center"
+              >
+                <img
+                  src="@img/plan1.png"
+                  alt="plans"
+                  class="plans__img w-100 h-100"
+                />
               </div>
             </div>
-          </li>
-          <li class="plans__content-item">
-            <img src="@img/plan3.png" alt="plans" class="plans__img" />
-            <h3 class="plans__subtitle">3-комнатная квартира</h3>
-            <div class="plans__box-content">
-              <div class="plans__box-text">
-                <p class="plans__text">Общая площадь</p>
-                <p class="plans__text">47,91 м2</p>
-              </div>
-              <div class="plans__box-text">
-                <p class="plans__text">Кухня</p>
-                <p class="plans__text">10,51 м2</p>
+            <div class="row">
+              <div class="col-12 mt-3 mb-2">
+                <h3 class="plans__subtitle">3-комнатная квартира</h3>
               </div>
             </div>
-          </li>
-          <li class="plans__content-item">
-            <img src="@img/plan4.png" alt="plans" class="plans__img" />
-            <h3 class="plans__subtitle">3-комнатная квартира</h3>
-            <div class="plans__box-content">
-              <div class="plans__box-text">
-                <p class="plans__text">Общая площадь</p>
-                <p class="plans__text">47,91 м2</p>
-              </div>
-              <div class="plans__box-text">
-                <p class="plans__text">Кухня</p>
-                <p class="plans__text">10,51 м2</p>
+
+            <div class="plans__box-text row justify-content-between">
+              <p class="plans__text col-6">Общая площадь</p>
+              <p class="plans__text col-6 text-end">47,91 м2</p>
+            </div>
+            <div class="plans__box-text row justify-content-between mt-2">
+              <p class="plans__text col-6">Кухня</p>
+              <p class="plans__text col-6 text-end">10,51 м2</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 my-3">
+          <div class="plans__content-item">
+            <div class="row">
+              <div
+                class="col-12 d-flex justify-content-center align-items-center"
+              >
+                <img
+                  src="@img/plan1.png"
+                  alt="plans"
+                  class="plans__img w-100 h-100"
+                />
               </div>
             </div>
-          </li>
-          <li class="plans__content-item">
-            <img src="@img/plan5.png" alt="plans" class="plans__img" />
-            <h3 class="plans__subtitle">3-комнатная квартира</h3>
-            <div class="plans__box-content">
-              <div class="plans__box-text">
-                <p class="plans__text">Общая площадь</p>
-                <p class="plans__text">47,91 м2</p>
-              </div>
-              <div class="plans__box-text">
-                <p class="plans__text">Кухня</p>
-                <p class="plans__text">10,51 м2</p>
+            <div class="row">
+              <div class="col-12 mt-3 mb-2">
+                <h3 class="plans__subtitle">3-комнатная квартира</h3>
               </div>
             </div>
-          </li>
-          <li class="plans__content-item">
-            <img src="@img/plan6.png" alt="plans" class="plans__img" />
-            <h3 class="plans__subtitle">3-комнатная квартира</h3>
-            <div class="plans__box-content">
-              <div class="plans__box-text">
-                <p class="plans__text">Общая площадь</p>
-                <p class="plans__text">47,91 м2</p>
-              </div>
-              <div class="plans__box-text">
-                <p class="plans__text">Кухня</p>
-                <p class="plans__text">10,51 м2</p>
+
+            <div class="plans__box-text row justify-content-between">
+              <p class="plans__text col-6">Общая площадь</p>
+              <p class="plans__text col-6 text-end">47,91 м2</p>
+            </div>
+            <div class="plans__box-text row justify-content-between mt-2">
+              <p class="plans__text col-6">Кухня</p>
+              <p class="plans__text col-6 text-end">10,51 м2</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 my-3">
+          <div class="plans__content-item">
+            <div class="row">
+              <div
+                class="col-12 d-flex justify-content-center align-items-center"
+              >
+                <img
+                  src="@img/plan1.png"
+                  alt="plans"
+                  class="plans__img w-100 h-100"
+                />
               </div>
             </div>
-          </li>
-        </ul>
-      </div>
+            <div class="row">
+              <div class="col-12 mt-3 mb-2">
+                <h3 class="plans__subtitle">3-комнатная квартира</h3>
+              </div>
+            </div>
+
+            <div class="plans__box-text row justify-content-between">
+              <p class="plans__text col-6">Общая площадь</p>
+              <p class="plans__text col-6 text-end">47,91 м2</p>
+            </div>
+            <div class="plans__box-text row justify-content-between mt-2">
+              <p class="plans__text col-6">Кухня</p>
+              <p class="plans__text col-6 text-end">10,51 м2</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 my-3">
+          <div class="plans__content-item">
+            <div class="row">
+              <div
+                class="col-12 d-flex justify-content-center align-items-center"
+              >
+                <img
+                  src="@img/plan1.png"
+                  alt="plans"
+                  class="plans__img w-100 h-100"
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 mt-3 mb-2">
+                <h3 class="plans__subtitle">3-комнатная квартира</h3>
+              </div>
+            </div>
+
+            <div class="plans__box-text row justify-content-between">
+              <p class="plans__text col-6">Общая площадь</p>
+              <p class="plans__text col-6 text-end">47,91 м2</p>
+            </div>
+            <div class="plans__box-text row justify-content-between mt-2">
+              <p class="plans__text col-6">Кухня</p>
+              <p class="plans__text col-6 text-end">10,51 м2</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 my-3">
+          <div class="plans__content-item">
+            <div class="row">
+              <div
+                class="col-12 d-flex justify-content-center align-items-center"
+              >
+                <img
+                  src="@img/plan1.png"
+                  alt="plans"
+                  class="plans__img w-100 h-100"
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 mt-3 mb-2">
+                <h3 class="plans__subtitle">3-комнатная квартира</h3>
+              </div>
+            </div>
+
+            <div class="plans__box-text row justify-content-between">
+              <p class="plans__text col-6">Общая площадь</p>
+              <p class="plans__text col-6 text-end">47,91 м2</p>
+            </div>
+            <div class="plans__box-text row justify-content-between mt-2">
+              <p class="plans__text col-6">Кухня</p>
+              <p class="plans__text col-6 text-end">10,51 м2</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 my-3">
+          <div class="plans__content-item">
+            <div class="row">
+              <div
+                class="col-12 d-flex justify-content-center align-items-center"
+              >
+                <img
+                  src="@img/plan1.png"
+                  alt="plans"
+                  class="plans__img w-100 h-100"
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 mt-3 mb-2">
+                <h3 class="plans__subtitle">3-комнатная квартира</h3>
+              </div>
+            </div>
+
+            <div class="plans__box-text row justify-content-between">
+              <p class="plans__text col-6">Общая площадь</p>
+              <p class="plans__text col-6 text-end">47,91 м2</p>
+            </div>
+            <div class="plans__box-text row justify-content-between mt-2">
+              <p class="plans__text col-6">Кухня</p>
+              <p class="plans__text col-6 text-end">10,51 м2</p>
+            </div>
+          </div>
+        </div>
+      </div></div>
     </div>
   </div>
 </section>
-
-
