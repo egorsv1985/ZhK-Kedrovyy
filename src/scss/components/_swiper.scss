@@ -61,34 +61,13 @@
   }
 }
 .swiper-scrollbar {
-  position: relative;
-  background-color: $textAccentColor;
-  height: 1px;
-  bottom: 0;
-  left: 0;
-
-  &-drag {
-    background: $accentColor;
-    height: 3px;
-  }
+ 
 }
 .swiper-pagination {
-  position: relative;
-  display: flex;
+  
 }
 .swiper-pagination-bullet {
-  opacity: 0;
-  &-active {
-    opacity: 1;
-    width: 0;
-    font-family: "Montserrat-SemiBold";
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 20px;
-    /* identical to box height */
 
-    color: $textAccentColor;
-  }
 }
 .swiper-button-next,
 .swiper-button-prev {

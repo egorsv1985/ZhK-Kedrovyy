@@ -16,14 +16,7 @@
     width: 100px;
     height: 100%;
   }
-  .swiper-scrollbar {
-    position: relative;
-    margin-top: 35px;
-    background-color: #d9d9d9;
-    &-drag {
-      top: 0;
-    }
-  }
+ 
   .swiper-pagination {
     max-width: 100%;
   }
@@ -35,12 +28,55 @@
   .swiper-button-next,
   .swiper-button-prev {
     background-color: rgb(54, 54, 54);
-    
+
     &:hover {
       background-color: $accentColor;
     }
     &::after {
       @include background(url("@img/icons/gallery-arrow.svg"));
+    }
+  }
+  .swiper {
+    margin-bottom: 30px;
+    position: relative;
+    &-slide {
+      border-radius: 10px;
+
+      position: relative;
+
+     
+    }
+    &-scrollbar {
+      position: relative;
+      background-color: #d9d9d9;
+      height: 1px;
+      bottom: 0;
+      left: 0;
+      margin: 30px 0 10px;
+
+      &-drag {
+        background: $accentColor;
+        height: 3px;
+        top: -1.5px;
+      }
+    }
+    &-pagination {
+      position: relative;
+      display: flex;
+     
+    }
+    &-pagination-bullet {
+      opacity: 0;
+      width: 0;
+      font-family: "Montserrat-SemiBold";
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 20px;
+
+      color: $textMainColor;
+      &-active {
+        opacity: 1;
+      }
     }
   }
 }
@@ -51,15 +87,12 @@
 .title--extrabold {
 }
 .swiper {
-  margin-bottom: 30px;
-  position: relative;
 }
 .gallerySwiper {
 }
 .swiper-wrapper {
 }
 .swiper-slide {
-  border-radius: 10px;
 }
 
 .swiper-pagination {

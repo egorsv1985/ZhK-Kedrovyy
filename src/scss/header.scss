@@ -1,14 +1,5 @@
 .header {
-  // position: relative;
-  &__top {
-    @include media(max, lg) {
-    }
-    &__logo {
-      // @include media (max, xl) {
-      //   text-align: center;
-      // }
-    }
-  }
+  z-index: 100;
 
   // .header__box
   &__box {
@@ -48,101 +39,27 @@
     font-weight: 600;
   }
 
-  // .header__link
-  &__link {
-  }
   // .header__bottom
   &__bottom {
-    @include media (max, lg) {
-      right: -100%;
-     
-      position: fixed;
-    top: 0;
-   
-    transition: right 0.2s ease-out;
-    width: 100%;
-    height: 100%;
-    
-    z-index: -1;
-    text-align: center;
-    }
-   
-    background-color: $mainColor;
-
     @include media(max, lg) {
-      // position: absolute;
-      // top: 50%;
-      // left: 10px;
-      // transform: translateY(-50%);
+      right: -100%;
+
+      position: fixed;
+      top: 0;
+
+      transition: right 0.2s ease-out;
+      width: 100%;
+      height: 100%;
+
+      z-index: -1;
+      text-align: center;
     }
+
+    background-color: $mainColor;
   }
 
   // .header__nav
   &__nav {
     padding: 0 10px;
   }
-
-  // .header__list
-  &__list {
-    
-  }
-  // .header__item
-  &__item {
-  }
-  .navbar {
-    .nav-link {
-     
-    }
-  }
-  .navbar-light .navbar-toggler-icon {
-    // position: relative;
-    // width: 30px;
-    // height: 3px;
-    // background-color: $accentColor;
-    // background-image: none;
-
-    &::after,
-    &::before {
-      // @include pseudo;
-      @include wh(30px, 3px);
-      background-color: $accentColor;
-      position: absolute;
-      left: 0;
-    }
-    &::after {
-      top: 10px;
-    }
-    &::before {
-      top: -10px;
-    }
-  }
 }
-.header {
-  // .header__top
-  &__top {}
-  // .header__logo
-  &__logo {}
-  // .header__box
-  &__box {}
-  // .header__box--map
-  &__box--map {}
-  // .header__text
-  &__text {}
-  // .header__text--semibold
-  &__text--semibold {}
-  // .header__box--time
-  &__box--time {}
-  // .header__box--tel
-  &__box--tel {}
-  // .header__link
-  &__link {}
-  // .header__burger
-  &__burger {}
-  // .header__bottom
-  &__bottom {}
-  // .header__menu
-  &__menu {}
-}
-
-
-
