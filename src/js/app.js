@@ -60,7 +60,7 @@ flsFunctions.menuInit();
 Документация по работе в шаблоне:
 Сниппет (HTML): pl
 */
-import "./libs/popup.js";
+// import "./libs/popup.js";
 
 /*
 Модуль параллакса мышью
@@ -72,7 +72,7 @@ import "./libs/popup.js";
 // ========================================================================================================================================================================================================================================================
 // Работа с формами ========================================================================================================================================================================================================================================================
 // ========================================================================================================================================================================================================================================================
-import * as flsForms from "./files/forms/forms.js";
+// import * as flsForms from "./files/forms/forms.js";
 
 /* Работа с полями формы: добавление классов, работа с placeholder. */
 // flsForms.formFieldsInit();
@@ -128,7 +128,7 @@ import * as flsForms from "./files/forms/forms.js";
 Документация плагина: https://swiperjs.com/
 Сниппет(HTML): swiper
 */
-import "./files/sliders.js";
+// import "./files/sliders.js";
 
 // ========================================================================================================================================================================================================================================================
 // Модули работы с прокруткой страницы ========================================================================================================================================================================================================================================================
@@ -154,13 +154,13 @@ import "./files/sliders.js";
 // import './libs/watcher.js'
 
 // Функции работы скроллом
-import * as flsScroll from "./files/scroll/scroll.js";
+// import * as flsScroll from "./files/scroll/scroll.js";
 
 // Плавная навигация по странице
-flsScroll.pageNavigation();
+// flsScroll.pageNavigation();
 
 // Функционал добавления классов к хедеру при прокрутке
-flsScroll.headerScroll();
+// flsScroll.headerScroll();
 
 // Функционал липкого блока
 // flsScroll.stickyBlock();
@@ -220,7 +220,6 @@ window.addEventListener("scroll", () => {
   }
   lastScroll = currentScroll;
 });
-
 // Получаем элементы страницы
 const videoContainer = document.getElementById("video-container");
 const playButton = document.getElementById("play-button");
@@ -232,30 +231,13 @@ playButton.style.display = "block";
 
 // Добавляем обработчик клика на кнопку "Play"
 playButton.addEventListener("click", function () {
-  // Посылаем сообщение в iframe, чтобы начать воспроизведение видео
-  videoFrame.contentWindow.postMessage(
-    '{"event":"command","func":"playVideo","args":""}',
-    "*"
-  );
+  // Запускаем видео с помощью YouTube API
+  videoFrame.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', "*");
   playButton.style.display = "none";
   // Скрываем заставку видео
   videoCover.style.display = "none";
-
-  // Добавляем обработчик события "load" на iframe, который будет отслеживать, когда видео закончится
-  videoFrame.addEventListener(
-    "load",
-    function () {
-      // Скрываем кнопку "Play" после окончания воспроизведения видео
-      playButton.style.display = "none";
-    },
-    { once: true }
-  );
 });
 
-// Добавляем обработчик события "load" на iframe
-videoFrame.addEventListener("load", function () {
-  videoCover.style.display = "block";
-});
 // Получаем ссылки на необходимые элементы страницы, такие как контейнер видео, кнопка Play, iframe с видео и заставка.
 // Показываем кнопку "Play" на странице.
 // Добавляем обработчик события click на кнопку Play, который отправляет сообщение в iframe для начала воспроизведения видео, скрывает кнопку Play и заставку.

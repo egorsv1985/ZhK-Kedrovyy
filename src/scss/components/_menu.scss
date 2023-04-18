@@ -1,0 +1,21 @@
+
+.menu {
+	// .menu__list
+	&__list {
+		
+		
+		
+
+	}
+	// .menu__item
+	&__item {}
+	// .menu__link
+	&__link {
+		font-family: "Montserrat-Medium";
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 20px;
+  
+		color: $textAccentColor;
+	}
+}

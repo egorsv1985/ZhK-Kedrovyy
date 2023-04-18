@@ -1,86 +1,106 @@
-<header class="header">
-  <div class="container">
-    <div class="header__top row d-none d-lg-flex">
-      <a href="index.html" class="header__logo logo col-2 text-center text-lg-start">
-        <img src="@img/logo.png" alt="logo" class="logo__img">
-      </a>
-      <div class="header__box header__box--map col-4">
-        <p class="header__text header__text--semibold">ЖК «Кедровый»</p>
-        <p class="header__text">Ханты-Мансийский АО - Югра,</p>
-        <p class="header__text">г. Сургут, Микрорайон 35А</p>
+<header class="header position-fixed top-0 start-0 end-0">
+  <div class="container pt-2 pb-3">
+    <div
+      class="header__top row align-items-center justify-content-between justify-content-lg-start"
+    >
+      <div class="col-3 col-md-2">
+        <a href="index.html" class="header__logo logo d-block" title="">
+          <img
+            src="@img/logo.png"
+            alt="logo"
+            class="logo__img w-auto h-auto mw-100"
+            width="95"
+            height="65"
+          />
+        </a>
       </div>
-      <div class="header__box header__box--time col-3">
-        <p class="header__text header__text--semibold">Режим работы офиса</p>
-        <p class="header__text">Пн.-Пт.: 9:00-18:00</p>
-        <p class="header__text">Сб.-Вс.: Выходной</p>
+      <div class="col-4 d-none d-lg-flex">
+        <div class="header__box header__box--map">
+          <p class="header__text header__text--semibold">ЖК «Кедровый»</p>
+          <p class="header__text">Ханты-Мансийский АО - Югра,</p>
+          <p class="header__text">г. Сургут, Микрорайон 35А</p>
+        </div>
       </div>
-      <div class="header__box header__box--tel col-3">
-        <p class="header__text header__text--semibold">Отдел продаж</p>
-        <p class="header__text">
-          <a href="tel:89227845766" class="header__link">8(922)784-57-66</a>
-        </p>
-        <p class="header__text">
-          <a href="tel:89224057138" class="header__link">8(922)405-71-38</a>
-        </p>
+      <div class="col-md-4 col-lg-3 d-none d-md-flex">
+        <div class="header__box header__box--time">
+          <p class="header__text header__text--semibold">Режим работы офиса</p>
+          <p class="header__text">Пн.-Пт.: 9:00-18:00</p>
+          <p class="header__text">Сб.-Вс.: Выходной</p>
+        </div>
+      </div>
+      <div class="col-7 col-md-3">
+        <div class="header__box header__box--tel">
+          <p class="header__text header__text--semibold">Отдел продаж</p>
+          <p class="header__text">
+            <a href="tel:89227845766" class="header__link">8(922)784-57-66</a>
+          </p>
+          <p class="header__text">
+            <a href="tel:89224057138" class="header__link">8(922)405-71-38</a>
+          </p>
+        </div>
+      </div>
+      <div class="col-1 d-xl-none">
+        <button
+          type="button"
+          class="header__burger burger button d-lg-none d-flex"
+        >
+          <span class="burger__inner">
+            <span></span>
+          </span>
+        </button>
       </div>
     </div>
   </div>
-  <div class="header__bottom">
-    <nav class="header__nav nav navbar navbar-expand-lg navbar-light container row">
-      <button
-        class="navbar-toggler header__toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse row" id="navbarNav">
-        <ul class="header__list navbar-nav justify-content-between">
-          <li class="header__item nav-item">
+  <div class="header__bottom justify-content-center align-items-center d-flex">
+    <div class="container">
+      <nav class="header__menu menu">
+        <ul
+          class="menu__list d-flex h-100 flex-column justify-content-center justify-content-lg-between flex-lg-row align-items-center py-3 px-0 m-0"
+        >
+          <li class="menu__item">
             <a
-              class="header__link nav-link"
-              aria-current="page"
+              class="menu__link py-2 px-3 my-2 py-lg-0 px-lg-0 my-lg-0 d-block"
               href="#advantages"
               >Преимущества</a
             >
           </li>
-          <li class="header__item nav-item">
-            <a class="header__link nav-link" aria-current="page" href="#gallery"
+          <li class="menu__item">
+            <a
+              class="menu__link py-2 px-3 my-2 py-lg-0 px-lg-0 my-lg-0 d-block"
+              href="#gallery"
               >Галерея</a
             >
           </li>
-          <li class="header__item nav-item">
+          <li class="menu__item">
             <a
-              class="header__link nav-link"
-              aria-current="page"
+              class="menu__link py-2 px-3 my-2 py-lg-0 px-lg-0 my-lg-0 d-block"
               href="#build-progress"
               >Ход стройки</a
             >
           </li>
-          <li class="header__item nav-item">
-            <a class="header__link nav-link" aria-current="page" href="#plans"
+          <li class="menu__item">
+            <a
+              class="menu__link py-2 px-3 my-2 py-lg-0 px-lg-0 my-lg-0 d-block"
+              href="#plans"
               >Планировки</a
             >
           </li>
-          <li class="header__item nav-item">
+          <li class="menu__item">
             <a
-              class="header__link nav-link"
-              aria-current="page"
+              class="menu__link py-2 px-3 my-2 py-lg-0 px-lg-0 my-lg-0 d-block"
               href="#documents"
               >Документация</a
             >
           </li>
-          <li class="header__item nav-item">
-            <a class="header__link nav-link" aria-current="page" href="#footer"
+          <li class="menu__item">
+            <a
+              class="menu__link py-2 px-3 my-2 py-lg-0 px-lg-0 my-lg-0 d-block"
+              href="#footer"
               >Контакты</a
             >
           </li>
         </ul>
-      </div>
-    </nav>
+      </nav>
+    </div>
   </div>
 </header>
