@@ -812,24 +812,16 @@ p {
   border-radius: 10px;
   background-size: cover;
   background-position: 50% 50%;
-  transition: all 0.5 ease;
+  transition: all 0.5s ease-in-out;
   filter: grayscale(100%);
 }
 .build-progress__box-img:hover {
   filter: grayscale(0);
-  scale: 1.05;
+  transform: scale(1.1);
 }
 .build-progress__box-img img,
 .build-progress__box-img picture {
   opacity: 0;
-}
-.build-progress__img {
-  filter: grayscale(100%);
-  transition: all 0.5s ease;
-}
-.build-progress__img:hover {
-  filter: none;
-  scale: 1.1;
 }
 
 .plans {
@@ -899,8 +891,14 @@ p {
   width: 1110px;
   height: 650px;
   max-width: 100%;
-  max-height: 100%;
+  max-height: 650px;
   border-radius: 10px;
+}
+@media only screen and (max-width: 575px) {
+  .video__box {
+    height: auto;
+    padding-bottom: 56.25%;
+  }
 }
 .video__box-img {
   position: absolute;
@@ -935,6 +933,12 @@ p {
   border-radius: 50%;
   box-shadow: 0px 10px 40px rgba(238, 149, 40, 0.6);
 }
+@media only screen and (max-width: 575px) {
+  .video__btn {
+    width: 100px;
+    height: 100px;
+  }
+}
 .video__btn::after {
   background-repeat: no-repeat;
   background-position: center;
@@ -960,6 +964,12 @@ p {
   transform: translate(-50%, -50%);
   border-radius: 50%;
   border: 1px solid #fff;
+}
+@media only screen and (max-width: 575px) {
+  .video__btn::before {
+    width: 90px;
+    height: 90px;
+  }
 }
 
 .banks {

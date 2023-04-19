@@ -10,11 +10,11 @@
     border-radius: 10px;
     background-size: cover;
     background-position: 50% 50%;
-    transition: all .5 ease;
+    transition: all .5s ease-in-out;
     filter: grayscale(100%);
     &:hover {
       filter: grayscale(0);
-      scale: 1.05;
+      transform: scale(1.1);
     }
     img,
     picture {
@@ -22,13 +22,5 @@
     }
   }
 
-  // .build-progress__img
-  &__img {
-    filter: grayscale(100%);
-    transition: all 0.5s ease;
-    &:hover {
-      filter: none;
-      scale: 1.1;
-    }
-  }
+  
 }

@@ -10,8 +10,13 @@
     width: 1110px;
     height: 650px;
     max-width: 100%;
-    max-height: 100%;
+    max-height: 650px;
     border-radius: 10px;
+    @include media (max, sm) {
+      height: auto;
+      padding-bottom: 56.25%;
+    }
+   
   }
   // .video__box-img
   &__box-img {
@@ -47,6 +52,9 @@
     background-color: $accentColor;
     border-radius: 50%;
     box-shadow: 0px 10px 40px rgba(238, 149, 40, 0.6);
+    @include media (max, sm) {
+      @include wh (100px);
+    }
     &::after {
       @include background(url("@img/icons/play.svg"));
       @include wh(40px, 46px);
@@ -71,6 +79,9 @@
       border-radius: 50%;
       
       border: 1px solid $secondColor;
+      @include media (max, sm) {
+        @include wh (90px);
+      }
     }
   }
 }
