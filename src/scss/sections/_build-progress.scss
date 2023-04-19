@@ -10,10 +10,11 @@
     border-radius: 10px;
     background-size: cover;
     background-position: 50% 50%;
+    transition: all .5 ease;
     filter: grayscale(100%);
     &:hover {
       filter: grayscale(0);
-      scale: 1.1;
+      scale: 1.05;
     }
     img,
     picture {

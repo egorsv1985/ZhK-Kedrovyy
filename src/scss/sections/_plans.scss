@@ -1,12 +1,12 @@
 .plans {
-  padding: 80px 0 115px;
+  
   // .plans__title
   &__title {
     margin-bottom: 30px;
   }
   // .plans__tablist
   &__tablist {
-    max-width: 500px;
+   
     margin: 0 auto 30px;
   }
   // .plans__item
@@ -14,29 +14,35 @@
   }
   // .plans__link
   &__link {
-    @include flex(center, center);
-    width: 148px;
-    height: 50px;
-
-    font-family: "Montserrat-Medium";
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
-    text-align: center;
-
-    color: $textTabColor;
+    
   }
-  .nav-tabs .nav-link {
-    margin-bottom: 0;
-    border: 1px solid $mainColor;
-    border-radius: 43px;
+  
+ 
+  
+  // .plans__content-item
+  &__content-item {
+    // padding: 0 15px 30px;
+   
   }
-  .nav-tabs .nav-item.show .nav-link,
-  .nav-tabs .nav-link.active {
-    @include flex(center, center);
+ 
+ 
+}
 
-    width: 148px;
-    height: 50px;
+
+
+.plans {
+  padding: 80px 0 115px;
+  // .plans__title
+  &__title {}
+  // .plans__tablist
+  &__tablist {
+    max-width: 500px;
+  }
+  // .plans__item
+  &__item {}
+  &__link.nav-item.show .nav-link,
+  &__link.nav-link.active {
+   
 
     background-color: $mainColor;
     border: 1px solid $mainColor;
@@ -47,26 +53,37 @@
   .nav-tabs {
     border-bottom: none;
   }
+  // .plans__link
+  &__link.nav-link {
+    @include flex(center, center);
+    width: 148px;
+    height: 50px;
+
+    font-family: "Montserrat-Medium";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    border: 1px solid $mainColor;
+    border-radius: 43px;
+    color: $textTabColor;
+  }
+  
   // .plans__content
-  &__content {
-  }
+  &__content {}
   // .plans__tab-pane
-  &__tab-pane {
-  }
-  // .plans__list
-  &__list {
-  }
+  &__tab-pane {}
   // .plans__content-item
   &__content-item {
-    padding: 0 15px 30px;
     background-color: $secondColor;
     border: 1px solid $thirdColor;
     border-radius: 10px;
+    padding-bottom: 30px;
+    img, picture{
+      border-radius: 10px;
+    }
   }
-  // .plans__img
-  &__img {
-    border-radius: 10px;
-  }
+  
   // .plans__subtitle
   &__subtitle {
     font-family: "Montserrat-Medium";
@@ -75,12 +92,8 @@
     line-height: 22px;
     color: $textMainColor;
   }
-  // .plans__box-content
-  &__box-content {
-  }
   // .plans__box-text
-  &__box-text {
-  }
+  &__box-text {}
   // .plans__text
   &__text {
     font-family: "Montserrat-Regular";
@@ -90,159 +103,4 @@
     color: $textThirdColor;
   }
 }
-.container {
-}
-.title {
-}
-.title--extrabold {
-}
-.nav {
-}
 
-.nav-item {
-}
-.nav-link {
-}
-.active {
-}
-.tab-content {
-}
-.tab-pane {
-}
-.fade {
-}
-.show {
-}
-.text {
-}
-.plans {
-  // .plans__title
-  &__title {
-  }
-  // .plans__tablist
-  &__tablist {
-  }
-  // .plans__item
-  &__item {
-  }
-  // .plans__link
-  &__link {
-  }
-  // .plans__content
-  &__content {
-  }
-  // .plans__tab-pane
-  &__tab-pane {
-  }
-  // .plans__box
-  &__box {
-  }
-  // .plans__img
-  &__img {
-  }
-  // .plans__subtitle
-  &__subtitle {
-  }
-  // .plans__box-content
-  &__box-content {
-  }
-  // .plans__box-text
-  &__box-text {
-  }
-  // .plans__text
-  &__text {
-  }
-}
-.container {
-}
-.title {
-}
-.title--extrabold {
-}
-.nav {
-}
-.nav-tabs {
-}
-.nav-item {
-}
-.nav-link {
-}
-.active {
-}
-.tab-content {
-}
-.tab-pane {
-}
-.fade {
-}
-.show {
-}
-.text {
-}
-.plans {
-  // .plans__title
-  &__title {
-  }
-  // .plans__tablist
-  &__tablist {
-  }
-  // .plans__item
-  &__item {
-  }
-  // .plans__link
-  &__link {
-  }
-  // .plans__content
-  &__content {
-  }
-  // .plans__tab-pane
-  &__tab-pane {
-  }
-  // .plans__list
-  &__list {
-  }
-  // .plans__content-item
-  &__content-item {
-  }
-  // .plans__img
-  &__img {
-  }
-  // .plans__subtitle
-  &__subtitle {
-  }
-  // .plans__box-content
-  &__box-content {
-  }
-  // .plans__box-text
-  &__box-text {
-  }
-  // .plans__text
-  &__text {
-  }
-}
-.container {
-}
-.title {
-}
-.title--extrabold {
-}
-.nav {
-}
-.nav-tabs {
-}
-.nav-item {
-}
-.nav-link {
-}
-.active {
-}
-.tab-content {
-}
-.tab-pane {
-}
-.fade {
-}
-.show {
-}
-.text {
-}

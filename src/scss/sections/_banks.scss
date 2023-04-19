@@ -2,42 +2,44 @@
   padding: 45px 0 40px;
   // .banks__title
   &__title {
-    margin-bottom: 50px;
+  
   }
   // .banks__content
   &__content {
-    @include flex($flex-wrap: wrap);
-    .row{
-      row-gap: 30px;
-    }
     // margin-bottom: 30px;
   }
   // .banks__ipoteka
   &__ipoteka {
-    @include flex($flex-direction: column);
-
-    // width: 100%;
-    // max-width: 730px;
-
     background-color: $mainColor;
     border-radius: 10px;
   }
   // .banks__box-ipoteka
   &__box-ipoteka {
-    @include flex();
     position: relative;
-    @include media (max, sm) {
-      flex-direction: column;
-      justify-content: center;
-    }
+
     &::before {
       @include pseudo;
-      @include wh(166px);
+      @include wh(100px);
 
       position: absolute;
 
       left: -45px;
       top: -45px;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.3);
+      animation-name: scale-animation;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+    }
+    &::after {
+      @include pseudo;
+      @include wh(300px);
+
+      position: absolute;
+
+      left: -180px;
+      top: -180px;
       border-radius: 50%;
       background-color: rgba(255, 255, 255, 0.3);
       animation-name: scale-animation;
@@ -55,16 +57,9 @@
   }
   // .banks__item-ipoteka
   &__item-ipoteka {
-    padding: 30px 35px 35px 20px;
-    @include flex($flex-direction: column);
-    width: 50%;
-    @include media (max, sm) {
-      width: 100%;
-    }
   }
   // .banks__img
   &__img {
-    margin-bottom: 25px;
     img,
     picture {
       width: 100%;
@@ -75,35 +70,24 @@
   &__subtitle {
     font-size: 24px;
     line-height: 29px;
-    margin-bottom: 20px;
   }
   // .banks__group-text
   &__group-text {
-    @include flex(space-between, center);
-    margin-bottom: 30px;
   }
   // .banks__box-text
   &__box-text {
-    @include flex($flex-direction: column);
-    gap: 6px;
-    width: 50%;
-
     &--caramel {
       background-color: $accentColor;
       border-radius: 0px 0px 0px 10px;
-      padding: 20px;
     }
     &--olive-green {
       background-color: $mainColor;
       border-radius: 0px 0px 10px 0px;
-      padding: 20px;
     }
   }
   // .banks__text
   &__text {
-    @include media (max, md){
-      text-align: center;
-    }
+    position: relative;
     &--big {
       font-size: 24px;
       line-height: 29px;
@@ -114,8 +98,8 @@
     }
     &--width {
       max-width: 330px;
-      margin-top: 10px;
     }
+   
   }
 
   // .banks__btn
@@ -136,16 +120,11 @@
   // .banks__box-links
   &__box-links {
     background-color: $bgColor;
-    display: flex;
-    gap: 30px;
-    padding: 20px;
-    @include media (max, sm){
-      flex-direction: column;
-    }
+   
+    
   }
   // .banks__group-links
   &__group-links {
-    @include flex(space-between, center, $flex-direction: column);
   }
   // .banks__link
   &__link {
@@ -160,36 +139,25 @@
   &__card {
     border: 1px solid $thirdColor;
     border-radius: 10px;
-    // width: 100%;
-    // max-width: 350px;
-    // padding: 0;
-
-    .banks__group-text {
-      margin-bottom: 0;
-    }
-  }
-
-  // .banks__item
-  &__item {
-    padding: 40px 15px 30px;
+    padding-top: 40px;
     .banks__text {
-      margin-bottom: 30px;
       &--info {
         position: relative;
-        padding-left: 40px;
-        margin-bottom: 0;
+
         &::before {
           @include pseudo;
           @include wh(24px);
           @include background(url("@img/icons/information.svg"));
           position: absolute;
           top: 50%;
-          left: 0;
+          left: 10px;
           transform: translateY(-50%);
         }
       }
     }
   }
+
+
 }
 @keyframes scale-animation {
   0% {
