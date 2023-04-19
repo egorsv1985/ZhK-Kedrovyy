@@ -1,49 +1,14 @@
 .plans {
-  
-  // .plans__title
-  &__title {
-    margin-bottom: 30px;
-  }
-  // .plans__tablist
-  &__tablist {
-   
-    margin: 0 auto 30px;
-  }
-  // .plans__item
-  &__item {
-  }
-  // .plans__link
-  &__link {
-    
-  }
-  
- 
-  
-  // .plans__content-item
-  &__content-item {
-    // padding: 0 15px 30px;
-   
-  }
- 
- 
-}
-
-
-
-.plans {
   padding: 80px 0 115px;
-  // .plans__title
-  &__title {}
+
   // .plans__tablist
   &__tablist {
     max-width: 500px;
+    margin: 0 auto 10px;
   }
-  // .plans__item
-  &__item {}
+
   &__link.nav-item.show .nav-link,
   &__link.nav-link.active {
-   
-
     background-color: $mainColor;
     border: 1px solid $mainColor;
     border-radius: 43px;
@@ -65,25 +30,22 @@
     line-height: 20px;
     text-align: center;
     border: 1px solid $mainColor;
-    border-radius: 43px;
     color: $textTabColor;
+    border-radius: 43px;
   }
-  
-  // .plans__content
-  &__content {}
-  // .plans__tab-pane
-  &__tab-pane {}
+
   // .plans__content-item
   &__content-item {
     background-color: $secondColor;
     border: 1px solid $thirdColor;
     border-radius: 10px;
     padding-bottom: 30px;
-    img, picture{
+    img,
+    picture {
       border-radius: 10px;
     }
   }
-  
+
   // .plans__subtitle
   &__subtitle {
     font-family: "Montserrat-Medium";
@@ -92,8 +54,7 @@
     line-height: 22px;
     color: $textMainColor;
   }
-  // .plans__box-text
-  &__box-text {}
+
   // .plans__text
   &__text {
     font-family: "Montserrat-Regular";
@@ -103,4 +64,3 @@
     color: $textThirdColor;
   }
 }
-

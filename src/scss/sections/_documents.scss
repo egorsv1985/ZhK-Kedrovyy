@@ -10,33 +10,31 @@
     position: relative;
     &::before {
       @include pseudo;
-      @include wh(76px);
+      @include wh(96px);
 
       position: absolute;
-
-      left: -25px;
-      top: -25px;
+      // transform: translate(-50%, -50%) scale(1);
+      left: -10px;
+      top: -10px;
       border-radius: 50%;
       background-color: rgba(255, 255, 255, 0.3);
       animation-name: scale-animation;
       animation-duration: 2s;
       animation-iteration-count: infinite;
-      animation-direction: alternate;
     }
     &::after {
       @include pseudo;
-      @include wh(200px);
+      @include wh(130px);
+      // transform: translate(-50%, -50%) scale(1);
 
       position: absolute;
-
-      left: -115px;
-      top: -115px;
+      left: -25px;
+    top: -25px;
       border-radius: 50%;
       background-color: rgba(255, 255, 255, 0.3);
       animation-name: scale-animation;
       animation-duration: 2s;
       animation-iteration-count: infinite;
-      animation-direction: alternate;
     }
   }
 }
