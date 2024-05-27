@@ -11,7 +11,7 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 		<div class="video__box" id="video-container">
 			<div class="video__box-img" id="video-cover">
 			</div>
-			<iframe class="video__frame" src="https://www.youtube.com/embed/cDiWGuqzzio?autoplay=0&amp;controls=1&amp;modestbranding=1&amp;rel=0&amp;enablejsapi=1" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
+			<iframe class="video__frame" src="https://www.youtube.com/embed/cDiWGuqzzio?autoplay=0&amp;controls=1&amp;modestbranding=1&amp;rel=0&amp;enablejsapi=1" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
 			<button class="video__btn" id="play-button"></button>
 		</div>
 	</div>
@@ -38,7 +38,7 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 								Ханты-Мансийский АО - Югра,
 							</p>
 							<p class="footer__text text text--normal text--accent text-center text-md-start">
-								г. Сургут, Микрорайон 35А
+								г. Сургут, ул. Игоря Киртбая, 31
 							</p>
 						</div>
 					</div>
@@ -117,7 +117,7 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 				<small class="footer__small">
 					<a href="#" class="footer__link">Политика конфиденциальности</a></small>
 				<small class="footer__small">
-					<a href="#" class="footer__link">Разработка сайта</a></small>
+					<a href="https://target-kc.ru" target="_blank" class="footer__link">Разработка сайта</a></small>
 			</div>
 		</div>
 	</div>
@@ -135,52 +135,52 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 			</div>
 			<div class="modal-body">
 				<? $APPLICATION->IncludeComponent(
-	"bitrix:iblock.element.add.form", 
-	"form-modal", 
-	array(
-		"AJAX_MODE" => "Y",
-		"COMPONENT_TEMPLATE" => "form-modal",
-		"STATUS_NEW" => "N",
-		"LIST_URL" => "",
-		"USE_CAPTCHA" => "N",
-		"USER_MESSAGE_EDIT" => "",
-		"USER_MESSAGE_ADD" => "Спасибо за заявку! Мы с вами скоро свяжемся!",
-		"DEFAULT_INPUT_SIZE" => "30",
-		"RESIZE_IMAGES" => "N",
-		"IBLOCK_TYPE" => "CONTENT",
-		"IBLOCK_ID" => "8",
-		"PROPERTY_CODES" => array(
-			0 => "14",
-			1 => "NAME",
-		),
-		"PROPERTY_CODES_REQUIRED" => array(
-			0 => "14",
-			1 => "NAME",
-		),
-		"GROUPS" => array(
-			0 => "2",
-		),
-		"STATUS" => "ANY",
-		"ELEMENT_ASSOC" => "CREATED_BY",
-		"MAX_USER_ENTRIES" => "100000",
-		"MAX_LEVELS" => "100000",
-		"LEVEL_LAST" => "Y",
-		"MAX_FILE_SIZE" => "0",
-		"PREVIEW_TEXT_USE_HTML_EDITOR" => "N",
-		"DETAIL_TEXT_USE_HTML_EDITOR" => "N",
-		"SEF_MODE" => "N",
-		"CUSTOM_TITLE_NAME" => "Имя",
-		"CUSTOM_TITLE_TAGS" => "",
-		"CUSTOM_TITLE_DATE_ACTIVE_FROM" => "",
-		"CUSTOM_TITLE_DATE_ACTIVE_TO" => "",
-		"CUSTOM_TITLE_IBLOCK_SECTION" => "",
-		"CUSTOM_TITLE_PREVIEW_TEXT" => "",
-		"CUSTOM_TITLE_PREVIEW_PICTURE" => "",
-		"CUSTOM_TITLE_DETAIL_TEXT" => "",
-		"CUSTOM_TITLE_DETAIL_PICTURE" => ""
-	),
-	false
-); ?>
+					"bitrix:iblock.element.add.form",
+					"form-modal",
+					array(
+						"AJAX_MODE" => "Y",
+						"COMPONENT_TEMPLATE" => "form-modal",
+						"STATUS_NEW" => "N",
+						"LIST_URL" => "",
+						"USE_CAPTCHA" => "N",
+						"USER_MESSAGE_EDIT" => "",
+						"USER_MESSAGE_ADD" => "Спасибо за заявку! Мы с вами скоро свяжемся!",
+						"DEFAULT_INPUT_SIZE" => "30",
+						"RESIZE_IMAGES" => "N",
+						"IBLOCK_TYPE" => "CONTENT",
+						"IBLOCK_ID" => "8",
+						"PROPERTY_CODES" => array(
+							0 => "14",
+							1 => "NAME",
+						),
+						"PROPERTY_CODES_REQUIRED" => array(
+							0 => "14",
+							1 => "NAME",
+						),
+						"GROUPS" => array(
+							0 => "2",
+						),
+						"STATUS" => "ANY",
+						"ELEMENT_ASSOC" => "CREATED_BY",
+						"MAX_USER_ENTRIES" => "100000",
+						"MAX_LEVELS" => "100000",
+						"LEVEL_LAST" => "Y",
+						"MAX_FILE_SIZE" => "0",
+						"PREVIEW_TEXT_USE_HTML_EDITOR" => "N",
+						"DETAIL_TEXT_USE_HTML_EDITOR" => "N",
+						"SEF_MODE" => "N",
+						"CUSTOM_TITLE_NAME" => "Имя",
+						"CUSTOM_TITLE_TAGS" => "",
+						"CUSTOM_TITLE_DATE_ACTIVE_FROM" => "",
+						"CUSTOM_TITLE_DATE_ACTIVE_TO" => "",
+						"CUSTOM_TITLE_IBLOCK_SECTION" => "",
+						"CUSTOM_TITLE_PREVIEW_TEXT" => "",
+						"CUSTOM_TITLE_PREVIEW_PICTURE" => "",
+						"CUSTOM_TITLE_DETAIL_TEXT" => "",
+						"CUSTOM_TITLE_DETAIL_PICTURE" => ""
+					),
+					false
+				); ?>
 
 			</div>
 		</div>
