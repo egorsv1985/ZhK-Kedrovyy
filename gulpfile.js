@@ -34,7 +34,7 @@ const fonts = gulp.series(reset, otfToTtf, ttfToWoff, fonstStyle);
 // Основные задачи будем выполнять параллельно после обработки шрифтов
 const devTasks = gulp.parallel(fonts, sprite, gitignore);
 // Основные задачи будем выполнять параллельно после обработки шрифтов
-const buildTasks = gulp.series(fonts, js, gulp.parallel(html, css, images, sprite, gitignore), jsp);
+const buildTasks = gulp.series(fonts, js, gulp.parallel(html, css, images,  gitignore), jsp);
 
 // Экспорт задач
 export { html }

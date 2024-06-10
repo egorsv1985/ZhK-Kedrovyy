@@ -24,7 +24,8 @@
 @font-face {
 	font-family: 'icons';
 	font-display: swap;
-	src: url('fonts/icons.woff2') format('woff2'),
+	src:
+		url('fonts/icons.woff2') format('woff2'),
 		url('fonts/icons.woff') format('woff');
 	font-weight: 400;
 	font-style: normal;
@@ -33,16 +34,36 @@
 @font-face {
 	font-family: 'Montserrat-ExtraBold';
 	font-display: swap;
-	src: url('fonts/Montserrat-ExtraBold.woff2') format('woff2'),
+	src:
+		url('fonts/Montserrat-ExtraBold.woff2') format('woff2'),
 		url('fonts/Montserrat-ExtraBold.woff') format('woff');
 	font-weight: 800;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'gilroy-extrabold';
+	font-display: swap;
+	src:
+		url('fonts/gilroy-extrabold.woff2') format('woff2'),
+		url('fonts/gilroy-extrabold.woff') format('woff');
+	font-weight: 800;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'gilroy-light';
+	font-display: swap;
+	src:
+		url('fonts/gilroy-light.woff2') format('woff2'),
+		url('fonts/gilroy-light.woff') format('woff');
+	font-weight: 300;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'Montserrat-Medium';
 	font-display: swap;
-	src: url('fonts/Montserrat-Medium.woff2') format('woff2'),
+	src:
+		url('fonts/Montserrat-Medium.woff2') format('woff2'),
 		url('fonts/Montserrat-Medium.woff') format('woff');
 	font-weight: 500;
 	font-style: normal;
@@ -51,8 +72,18 @@
 @font-face {
 	font-family: 'Montserrat-Regular';
 	font-display: swap;
-	src: url('fonts/Montserrat-Regular.woff2') format('woff2'),
+	src:
+		url('fonts/Montserrat-Regular.woff2') format('woff2'),
 		url('fonts/Montserrat-Regular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Geometria';
+	font-display: swap;
+	src:
+		url('fonts/Geometria.woff2') format('woff2'),
+		url('fonts/Geometria.woff') format('woff');
 	font-weight: 400;
 	font-style: normal;
 }
@@ -60,7 +91,8 @@
 @font-face {
 	font-family: 'Montserrat-SemiBold';
 	font-display: swap;
-	src: url('fonts/Montserrat-SemiBold.woff2') format('woff2'),
+	src:
+		url('fonts/Montserrat-SemiBold.woff2') format('woff2'),
 		url('fonts/Montserrat-SemiBold.woff') format('woff');
 	font-weight: 600;
 	font-style: normal;
@@ -69,7 +101,8 @@
 @font-face {
 	font-family: 'Montserrat-Bold';
 	font-display: swap;
-	src: url('fonts/Montserrat-Bold.woff2') format('woff2'),
+	src:
+		url('fonts/Montserrat-Bold.woff2') format('woff2'),
 		url('fonts/Montserrat-Bold.woff') format('woff');
 	font-weight: 700;
 	font-style: normal;
@@ -575,15 +608,26 @@ p {
 }
 
 .prime__title {
-	font-family: 'Montserrat-ExtraBold';
+	font-family: 'gilroy-extrabold';
 	font-weight: 800;
-	--prime-title-font-size: clamp(26px, 5.09vw + -3.33px, 70px);
+	--prime-title-font-size: clamp(26px, 5.09vw + -3.33px, 52px);
 	--prime-title-line-height: clamp(35px, 4.63vw + 18.33px, 85px);
 	font-size: var(--prime-title-font-size);
 	line-height: var(--prime-title-line-height);
-	color: #fff;
-}
+	line-height: 1;
 
+	text-wrap: balance;
+	color: #32b01c;
+	-webkit-text-stroke: 2px #fff;
+	text-stroke: 2px #fff;
+}
+.prime__text--small {
+	font-family: 'gilroy-light';
+	color: #fff;
+	text-wrap: balance;
+	line-height: 1;
+	font-weight: 300;
+}
 .prime__btn {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -726,7 +770,7 @@ p {
 	background-position: 50% 0;
 }
 
-.prime .swiper-slide::before {
+/* .prime .swiper-slide::before {
 	content: '';
 	display: block;
 	position: absolute;
@@ -735,7 +779,7 @@ p {
 	left: 0;
 	top: 0;
 	background-color: rgba(0, 0, 0, 0.6);
-}
+} */
 
 .prime .swiper-scrollbar {
 	position: relative;
@@ -1088,7 +1132,16 @@ p {
 	line-height: 20px;
 	color: #585858;
 }
-
+.plans__box-text--absolute {
+	top: 5%;
+	left: 3%;
+	z-index: 10;
+	background-color: #e09b58;
+}
+.plans__box-text--absolute .plans__text {
+	/* color:#fff; */
+	font-weight: 600;
+}
 .video {
 	padding: 50px 0;
 }
@@ -1614,7 +1667,9 @@ p {
 	-moz-appearance: none;
 	appearance: none;
 	border-radius: 0.375rem;
-	transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+	transition:
+		border-color 0.15s ease-in-out,
+		box-shadow 0.15s ease-in-out;
 }
 
 .form-control:focus {
@@ -1672,8 +1727,7 @@ input:not([type='textarea']):valid + .form__label {
 .menu__list {
 	.menu__item:last-child {
 		background-color: #e09b58;
-    padding-inline: 12px;
-    
+		padding-inline: 12px;
 	}
 }
 @media only screen and (max-width: 1200px) {
@@ -1701,14 +1755,13 @@ input:not([type='textarea']):valid + .form__label {
 		z-index: -1;
 		text-align: center;
 	}
-  .menu__list {
-	.menu__item:last-child {
-		button{
-      
-      margin: 0 auto;
-    }
+	.menu__list {
+		.menu__item:last-child {
+			button {
+				margin: 0 auto;
+			}
+		}
 	}
-}
 }
 
 @media only screen and (max-width: 767px) {

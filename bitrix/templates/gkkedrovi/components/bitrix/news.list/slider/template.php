@@ -51,7 +51,7 @@ $this->setFrameMode(true);
 											<h1 class="prime__title mb-3">
 												<?=nl2br($arItem['PROPERTIES']['TEXT']['VALUE']);?>
 											</h1>
-											<p class="prime__text--small">* скидка распространяется на ограниченный ассортимент квартир. Подробности уточняйте в отделе продаж</p>
+											<p class="prime__text--small">* скидка распространяется на ограниченный ассортимент квартир до 30.06.2024 г. Подробности уточняйте в отделе продаж</p>
 											<?if ($arItem['PROPERTIES']['TEXT_BTN']['VALUE']):?>
 											<a class="prime__btn btn mb-3 mb-xl-0" href="<?=$arItem['PROPERTIES']['LINK_BTN']['VALUE'];?>" role="button"><?=$arItem['PROPERTIES']['TEXT_BTN']['VALUE'];?></a>
 											<?endif;?>

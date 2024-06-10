@@ -82,7 +82,7 @@
     a.addEventListener("click", function () {
       m.contentWindow.postMessage(
         '{"event":"command","func":"playVideo","args":""}',
-        "*"
+        "*",
       ),
         (a.style.display = "none"),
         (u.style.display = "none");
