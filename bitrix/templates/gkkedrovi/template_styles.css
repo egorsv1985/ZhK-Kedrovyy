@@ -606,7 +606,13 @@ p {
 	position: relative;
 	z-index: 1;
 }
-
+.prime__label{
+	position: absolute;
+	top: 20px;
+	right: 0;
+	display: flex;
+	justify-content: flex-end;
+}
 .prime__title {
 	font-family: 'gilroy-extrabold';
 	font-weight: 800;
@@ -620,6 +626,29 @@ p {
 	color: #32b01c;
 	-webkit-text-stroke: 2px #fff;
 	text-stroke: 2px #fff;
+}
+/* For browsers that support clamp and container queries */
+@supports (font-size: clamp(1rem, 1cqi, 1rem)) {
+  :root {
+		--font-size-prime-subtitle: clamp(1.25rem, 1.14cqi + 1.02rem, 1.88rem);
+  }
+}
+/* For browsers that don't support clamp or container queries */
+@supports not (font-size: clamp(1rem, 1cqi, 1rem)) {
+  :root {
+		--font-size-prime-subtitle: 1.25rem;
+  }
+  @media screen and (min-width: 1200px) {
+    :root {
+			--font-size-prime-subtitle: 1.88rem;
+    }
+  }
+}
+.prime .subtitle {
+	
+	font-weight: 600;
+	font-size: var(--font-size-prime-subtitle);
+	
 }
 .prime__text--small {
 	font-family: 'gilroy-light';
