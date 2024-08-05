@@ -43,38 +43,49 @@ $this->setFrameMode(true);
 
 			?>
 				<div class="swiper-slide position-relative" style="background-image: url('<?= $arItem["PREVIEW_PICTURE"]["WEBP"]; ?>')" id="<?= $this->GetEditAreaId($arItem['ID']); ?>">
-					<div class="prime__content ">
-						<div class="container">
-							<div class="row align-items-start">
-								<div class="prime__content-box col-12 col-xl-9">
-									<h1 class="prime__title mb-3">
-										<?= nl2br($arItem['PROPERTIES']['TEXT']['VALUE']); ?>
-									</h1>
-									<!-- <h2 class="prime__subtitle subtitle text-white"><?= $arItem['PROPERTIES']['LABEL']['VALUE']; ?></h2> -->
-									<p class="prime__text--small">* скидка распространяется на ограниченный ассортимент квартир до 31.07.2024 г. Подробности уточняйте в отделе продаж</p>
-									<? if ($arItem['PROPERTIES']['TEXT_BTN']['VALUE']) : ?>
-										<a class="prime__btn btn mb-3 mb-xl-0" href="<?= $arItem['PROPERTIES']['LINK_BTN']['VALUE']; ?>" role="button"><?= $arItem['PROPERTIES']['TEXT_BTN']['VALUE']; ?></a>
-									<? endif; ?>
-								</div>
-								<div class="prime__content-box col-12  col-xl-3">
-									<div class="prime__text-box">
-										<p class="prime__text text text--extrabold">Дом сдан</p>
-										<p class="prime__text text d-none">Лет успешного опыта на рынке</p>
+
+					<? if ($arItem['PROPERTIES']['BG_COLOR']['VALUE']) : ?>
+						<div class="" style="background: <?= $arItem['PROPERTIES']['BG_COLOR']['VALUE']; ?>">
+							<div class="container">
+								<img src="<?= $arItem["PREVIEW_PICTURE"]["SRC"]; ?>" class="w-100 h-auto">
+							</div>
+						</div>
+					<? else : ?>
+						<div class="prime__content ">
+							<div class="container">
+								<div class="row align-items-start">
+									<div class="prime__content-box col-12 col-xl-9">
+										<h1 class="prime__title mb-3">
+											<?= nl2br($arItem['PROPERTIES']['TEXT']['VALUE']); ?>
+										</h1>
+										<!-- <h2 class="prime__subtitle subtitle text-white"><?= $arItem['PROPERTIES']['LABEL']['VALUE']; ?></h2> -->
+										<p class="prime__text--small">* скидка распространяется на ограниченный ассортимент квартир до 31.07.2024 г. Подробности уточняйте в отделе продаж</p>
+										<? if ($arItem['PROPERTIES']['TEXT_BTN']['VALUE']) : ?>
+											<a class="prime__btn btn mb-3 mb-xl-0" href="<?= $arItem['PROPERTIES']['LINK_BTN']['VALUE']; ?>" role="button"><?= $arItem['PROPERTIES']['TEXT_BTN']['VALUE']; ?></a>
+										<? endif; ?>
 									</div>
-								</div>
-								<div class="prime__label col-12  col-xl-3">
-									<div class="prime__text-box">
-										<h2 class="prime__subtitle subtitle text-white text-center"><?= $arItem['PROPERTIES']['LABEL']['VALUE']; ?></h2>
+									<div class="prime__content-box col-12  col-xl-3">
+										<div class="prime__text-box">
+											<p class="prime__text text text--extrabold">Дом сдан</p>
+											<p class="prime__text text d-none">Лет успешного опыта на рынке</p>
+										</div>
+
+									</div>
+									<div class="prime__label col-12  col-xl-3">
+										<div class="prime__text-box">
+											<h2 class="prime__subtitle subtitle text-white text-center"><?= $arItem['PROPERTIES']['LABEL']['VALUE']; ?></h2>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-
-					</div>
+					<? endif; ?>
 				</div>
 			<? endforeach; ?>
-
 		</div>
+	</div>
+	<div class="container">	
+		<a class="prime__link  plans__link nav-link active" href="#plans">Планировки</a>
 	</div>
 </section>
 

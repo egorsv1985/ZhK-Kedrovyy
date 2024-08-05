@@ -573,7 +573,13 @@ p {
 }
 
 .prime {
-	padding: 140px 0 0;
+	padding: 130px 0 0;
+}
+
+@media only screen and (max-width: 767px) {
+	.prime {
+		padding: 60px 0 0;
+	}
 }
 
 .prime__control {
@@ -606,7 +612,7 @@ p {
 	position: relative;
 	z-index: 1;
 }
-.prime__label{
+.prime__label {
 	position: absolute;
 	top: 20px;
 	right: 0;
@@ -629,26 +635,23 @@ p {
 }
 /* For browsers that support clamp and container queries */
 @supports (font-size: clamp(1rem, 1cqi, 1rem)) {
-  :root {
+	:root {
 		--font-size-prime-subtitle: clamp(1.25rem, 1.14cqi + 1.02rem, 1.88rem);
-  }
+	}
 }
 /* For browsers that don't support clamp or container queries */
 @supports not (font-size: clamp(1rem, 1cqi, 1rem)) {
-  :root {
+	:root {
 		--font-size-prime-subtitle: 1.25rem;
-  }
-  @media screen and (min-width: 1200px) {
-    :root {
+	}
+	@media screen and (min-width: 1200px) {
+		:root {
 			--font-size-prime-subtitle: 1.88rem;
-    }
-  }
+		}
+	}
 }
 .prime .subtitle {
-	
-	font-weight: 600;
 	font-size: var(--font-size-prime-subtitle);
-	
 }
 .prime__text--small {
 	font-family: 'gilroy-light';
@@ -1836,3 +1839,28 @@ input:not([type='textarea']):valid + .form__label {
 .webp .video__box-img {
 	background-image: url(img/prime.webp);
 }
+.prime__link.plans__link.nav-link {
+	position: relative;
+	z-index: 2;
+	margin-top: -6%;
+	margin-bottom: 4%;
+	max-width: 170px;
+	width: 45%;
+	height: inherit;
+	padding-block: 10px;
+	padding-inline: 10px;
+	text-transform: uppercase;
+
+	--prime-text-size: clamp(0.75rem, 0.91cqi + 0.57rem, 1.25rem);
+	font-size: var(--prime-text-size);	
+	line-height: 1;
+	font-family: 'gilroy-light';
+}
+.prime__link:hover {
+	color: #000 !important;
+}
+@media only screen and (max-width: 575px) {
+	.prime__link.plans__link.nav-link{
+		margin-top: -10%;
+		padding-block: 6px;
+	}}

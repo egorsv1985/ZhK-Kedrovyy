@@ -74,7 +74,7 @@ $asset->addJs(SITE_TEMPLATE_PATH . '/script.js');
 		<header class="header position-fixed top-0 start-0 end-0">
 			<div class="container pt-2 pb-3">
 				<div class="header__top row align-items-center justify-content-between justify-content-lg-start">
-					<div class="col-3 col-md-2">
+					<div class="col col-sm-3 col-md-2">
 						<div class="header__logo logo d-block">
 							<picture>
 								<source srcset="<?= SITE_TEMPLATE_PATH; ?>/img/Логотип_КП_цв.webp" type="image/webp">
@@ -107,8 +107,8 @@ $asset->addJs(SITE_TEMPLATE_PATH . '/script.js');
 							</p>
 						</div>
 					</div>
-					<div class="col-1 d-xl-none">
-						<button type="button" class="header__burger burger button d-lg-none d-flex">
+					<div class="col d-xl-none">
+						<button type="button" class="header__burger burger button d-lg-none d-flex ms-auto">
 							<span class="burger__inner">
 								<span></span>
 							</span>
